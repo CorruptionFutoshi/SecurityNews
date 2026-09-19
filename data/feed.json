@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-19T14:08:08Z",
+  "checkedAt": "2026-09-19T20:40:48Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,59 +8,70 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-19T14:08:08Z"
+      "fetchedAt": "2026-09-19T20:40:48Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-19T14:08:08Z"
+      "fetchedAt": "2026-09-19T20:40:48Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-19T14:08:08Z"
+      "fetchedAt": "2026-09-19T20:40:48Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-19T14:08:08Z"
+      "fetchedAt": "2026-09-19T20:40:48Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-19T14:08:08Z"
+      "fetchedAt": "2026-09-19T20:40:48Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-19T14:08:08Z"
+      "fetchedAt": "2026-09-19T20:40:48Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-19T14:08:08Z"
+      "fetchedAt": "2026-09-19T20:40:48Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-19T14:08:08Z"
+      "fetchedAt": "2026-09-19T20:40:48Z"
     }
   ],
   "items": [
+    {
+      "id": "d7e4f5d3f310f41d94d4",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "BragJack - $20K in bounty rewards from Anthropic, Perplexity, Google, Microsoft and Opera Using 1 Extension",
+      "url": "https://www.reddit.com/r/netsec/comments/1wkrcgz/bragjack_20k_in_bounty_rewards_from_anthropic/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-19T16:57:24Z",
+      "cves": []
+    },
     {
       "id": "806bb8b3c1e82c33f997",
       "source": "reddit-netsec",
@@ -1432,19 +1443,6 @@
       "publishedAt": "2026-08-23T15:00:00Z",
       "cves": [
         "CVE-2026-21962"
-      ]
-    },
-    {
-      "id": "1332f02f8aa8521ccee8",
-      "source": "cisa-kev",
-      "category": "exploited",
-      "priority": "exploited",
-      "title": "Synacor Zimbra Collaboration Suite (ZCS) — CVE-2026-73570",
-      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-73570",
-      "description": "Zimbra Collaboration Suite (ZCS) contains an OS command injection vulnerability which could allow an unauthenticated attacker to send specially crafted SMTP requests that may result in execution of arbitrary operating system commands as th…",
-      "publishedAt": "2026-08-20T15:00:00Z",
-      "cves": [
-        "CVE-2026-73570"
       ]
     }
   ]
