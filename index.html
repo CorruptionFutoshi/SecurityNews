@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#10243a">
-  <meta name="description" content="国内の注意喚起と悪用確認済みの脆弱性を追う、個人用セキュリティニュースフィード。">
+  <meta name="description" content="注意喚起、セキュリティブログ、Reddit の話題、Exploit Database の更新を追うニュースフィード。">
   <title>Security Feed | セキュリティ情報を、見逃さない。</title>
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="stylesheet" href="./styles.css">
@@ -20,6 +20,7 @@
       </a>
       <nav class="header-nav" aria-label="主なページ内リンク">
         <a href="#priority">重要な更新</a>
+        <a href="#exploit-watch">Exploit Database</a>
         <a href="#feed">最新フィード</a>
         <a href="#sources">情報源</a>
       </nav>
@@ -33,7 +34,7 @@
         <div class="hero-copy">
           <p class="eyebrow"><span class="eyebrow-line"></span> SECURITY MONITOR / JAPAN + GLOBAL</p>
           <h1>必要な脅威情報を、<br><em>ひとつの画面に。</em></h1>
-          <p class="hero-lead">公的機関の注意喚起、脆弱性情報、実際に悪用された CVE を時系列で確認できます。気になる記事は保存して、あとから読み返せます。</p>
+          <p class="hero-lead">公的機関の注意喚起、セキュリティブログ、Reddit の話題、Exploit Database の更新を時系列で確認できます。気になる記事は保存して、あとから読み返せます。</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#feed">最新情報を見る <span aria-hidden="true">↗</span></a>
             <span class="hero-update" id="hero-update">データを読み込み中…</span>
@@ -68,6 +69,18 @@
         </div>
       </section>
 
+      <section id="exploit-watch" class="exploit-section" aria-labelledby="exploit-heading">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker"><span class="kicker-dot"></span> EXPLOIT WATCH</p>
+            <h2 id="exploit-heading">Exploit Database の更新</h2>
+            <p>公開されたエクスプロイトや PoC を確認します。実際の悪用確認とは区別して表示しています。</p>
+          </div>
+          <button id="exploit-all" class="section-link section-button" type="button">30日分を見る <span aria-hidden="true">→</span></button>
+        </div>
+        <div id="exploit-list" class="exploit-list" aria-live="polite"><p class="exploit-empty">更新を確認中…</p></div>
+      </section>
+
       <div class="main-grid">
         <section id="feed" class="feed-section" aria-labelledby="feed-heading">
           <div class="section-heading feed-heading">
@@ -96,6 +109,9 @@
                 <button type="button" data-category="vulnerability" aria-pressed="false">脆弱性</button>
                 <button type="button" data-category="exploited" aria-pressed="false">悪用確認</button>
                 <button type="button" data-category="analysis" aria-pressed="false">分析・レポート</button>
+                <button type="button" data-category="blog" aria-pressed="false">ブログ</button>
+                <button type="button" data-category="community" aria-pressed="false">Reddit</button>
+                <button type="button" data-category="exploit" aria-pressed="false">公開PoC</button>
               </div>
               <div class="personal-filters">
                 <button id="unread-button" type="button" aria-pressed="false">未読のみ</button>
@@ -116,13 +132,15 @@
             <h3>情報の見かた</h3>
             <div class="legend-row"><span class="badge badge-urgent">緊急</span><span>IPA が緊急とした注意喚起</span></div>
             <div class="legend-row"><span class="badge badge-exploited">悪用確認</span><span>CISA KEV に掲載された CVE</span></div>
+            <div class="legend-row"><span class="badge badge-exploit-published">PoC公開</span><span>Exploit Database の登録・更新。悪用確認を意味しません</span></div>
+            <div class="legend-row"><span class="badge badge-community">話題</span><span>Reddit r/netsec の週間上位。投票数は表示していません</span></div>
             <p class="aside-note">記事を開くと既読になります。☆で保存した記事と既読情報は、このブラウザに保存されます。</p>
           </section>
           <section id="sources" class="aside-card sources-card">
             <p class="aside-kicker">DATA SOURCES</p>
             <h3>情報源</h3>
             <div id="source-list" class="source-list"><p>読み込み中…</p></div>
-            <p class="aside-note">本文は転載せず、見出しと短い説明から一次情報に移動できます。</p>
+            <p class="aside-note">本文は転載せず、見出しと短い説明から元記事・投稿に移動できます。</p>
           </section>
           <section class="aside-card status-card">
             <p class="aside-kicker">UPDATE STATUS</p>

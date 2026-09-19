@@ -6,6 +6,9 @@ const LABELS = {
   vulnerability: '脆弱性',
   exploited: '悪用確認',
   analysis: '分析・レポート',
+  blog: 'ブログ',
+  community: 'Reddit の話題',
+  exploit: '公開PoC',
 };
 
 const state = {
@@ -78,13 +81,14 @@ function sourceName(id) {
 }
 
 function isImportant(item) {
-  return item.priority === 'urgent' || item.priority === 'exploited';
+  return item.priority === 'urgent' || item.priority === 'exploited' || item.priority === 'exploit-published';
 }
 
 function markRead(id) {
   state.read.add(id);
   saveSet('read', state.read);
   renderFeed();
+  renderExploitWatch();
 }
 
 function toggleSaved(id) {
@@ -93,6 +97,7 @@ function toggleSaved(id) {
   saveSet('saved', state.saved);
   renderFeed();
   renderPriority();
+  renderExploitWatch();
 }
 
 function badge(label, variant) {
@@ -149,6 +154,18 @@ function renderPriority() {
   }
 }
 
+function renderExploitWatch() {
+  const target = document.querySelector('#exploit-list');
+  target.replaceChildren();
+  const cutoff = Date.now() - 30 * DAY;
+  const items = state.items.filter((item) => item.source === 'exploit-db' && new Date(item.publishedAt).getTime() >= cutoff).slice(0, 4);
+  if (!items.length) {
+    target.append(el('p', 'exploit-empty', '直近30日の登録・更新はありません。取得状況は情報源欄で確認できます。'));
+    return;
+  }
+  for (const item of items) target.append(feedCard(item));
+}
+
 function filteredItems() {
   const cutoff = Date.now() - state.period * DAY;
   const query = state.search.trim().toLocaleLowerCase();
@@ -185,6 +202,8 @@ function feedCard(item) {
   const tags = el('div', 'feed-tags');
   if (item.priority === 'urgent') tags.append(badge('緊急', 'urgent'));
   if (item.priority === 'exploited') tags.append(badge('悪用確認', 'exploited'));
+  if (item.priority === 'exploit-published') tags.append(badge('PoC公開', 'exploit-published'));
+  if (item.category === 'community') tags.append(badge('週間上位', 'community'));
   for (const cve of (item.cves || []).slice(0, 3)) tags.append(el('span', 'cve-tag', cve));
   if (tags.childNodes.length) body.append(tags);
   card.append(body);
@@ -296,6 +315,20 @@ function setupControls() {
     state.visible += PAGE_SIZE;
     renderFeed();
   });
+  document.querySelector('#exploit-all').addEventListener('click', () => {
+    state.category = 'all';
+    state.source = 'exploit-db';
+    state.period = 30;
+    state.visible = PAGE_SIZE;
+    document.querySelector('#source-select').value = 'exploit-db';
+    document.querySelector('#period-select').value = '30';
+    for (const tab of document.querySelectorAll('#category-tabs button')) {
+      tab.classList.toggle('active', tab.dataset.category === 'all');
+      tab.setAttribute('aria-pressed', String(tab.dataset.category === 'all'));
+    }
+    renderFeed();
+    document.querySelector('#feed').scrollIntoView({ behavior: 'smooth' });
+  });
 }
 
 async function loadFeed() {
@@ -316,11 +349,13 @@ async function loadFeed() {
     }
     renderSummary();
     renderPriority();
+    renderExploitWatch();
     renderSources();
     renderFeed();
   } catch (error) {
     document.querySelector('#feed-list').replaceChildren(el('div', 'empty-feed', 'フィードを読み込めませんでした。ページを再読み込みしてください。'));
     document.querySelector('#priority-grid').replaceChildren(el('div', 'empty-priority', '重要な更新を読み込めませんでした。'));
+    document.querySelector('#exploit-list').replaceChildren(el('p', 'exploit-empty', 'Exploit Database の更新を読み込めませんでした。'));
     document.querySelector('#update-status').textContent = `読み込みエラー: ${error.message}`;
     document.querySelector('#hero-update').textContent = 'データを確認できません';
     document.querySelector('#result-count').textContent = '—';

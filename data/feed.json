@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-19T13:49:56Z",
+  "checkedAt": "2026-09-19T14:04:25Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,38 +8,72 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-19T13:49:56Z"
+      "fetchedAt": "2026-09-19T14:04:25Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-19T13:49:56Z"
+      "fetchedAt": "2026-09-19T14:04:25Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-19T13:49:56Z"
+      "fetchedAt": "2026-09-19T14:04:25Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-19T13:49:56Z"
+      "fetchedAt": "2026-09-19T14:04:25Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-19T13:49:56Z"
+      "fetchedAt": "2026-09-19T14:04:25Z"
+    },
+    {
+      "id": "krebs",
+      "name": "Krebs on Security",
+      "home": "https://krebsonsecurity.com/",
+      "ok": true,
+      "fetchedAt": "2026-09-19T14:04:25Z"
+    },
+    {
+      "id": "reddit-netsec",
+      "name": "Reddit r/netsec 週間上位",
+      "home": "https://www.reddit.com/r/netsec/top/?t=week",
+      "ok": true,
+      "fetchedAt": "2026-09-19T14:04:25Z"
+    },
+    {
+      "id": "exploit-db",
+      "name": "Exploit Database",
+      "home": "https://www.exploit-db.com/",
+      "ok": true,
+      "fetchedAt": "2026-09-19T14:04:25Z"
     }
   ],
   "items": [
+    {
+      "id": "806bb8b3c1e82c33f997",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "CVE-2026-77179: Docker's hypervisor for Mac compromised (Docker Desktop, Docker Sandboxes)",
+      "url": "https://www.reddit.com/r/netsec/comments/1wkeh8n/cve202677179_dockers_hypervisor_for_mac/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-19T06:25:58Z",
+      "cves": [
+        "CVE-2026-77179"
+      ]
+    },
     {
       "id": "8beb21ff8f628fceb293",
       "source": "jvn",
@@ -49,6 +83,28 @@
       "url": "https://jvn.jp/vu/JVNVU97703430/",
       "description": "ISC（Internet Systems Consortium）から、ISC BINDの複数の脆弱性が公開されました。",
       "publishedAt": "2026-09-18T07:45:00Z",
+      "cves": []
+    },
+    {
+      "id": "f48d81f14a9cee2adfcc",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Hacking OpenAI",
+      "url": "https://www.reddit.com/r/netsec/comments/1wjgti2/hacking_openai/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-18T04:58:53Z",
+      "cves": []
+    },
+    {
+      "id": "bd6ca9ee3e893dba8f66",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Quantum Computers Are Not a Threat to 128-bit Symmetric Keys",
+      "url": "https://www.reddit.com/r/netsec/comments/1wjg8d8/quantum_computers_are_not_a_threat_to_128bit/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-18T04:27:55Z",
       "cves": []
     },
     {
@@ -113,6 +169,17 @@
       ]
     },
     {
+      "id": "16fe9a9155364e86c32b",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Fragnesia primitive via Open vSwitch. Deterministic local privilege escalation.",
+      "url": "https://www.reddit.com/r/netsec/comments/1wimrzt/fragnesia_primitive_via_open_vswitch/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-17T07:06:38Z",
+      "cves": []
+    },
+    {
       "id": "cb345539bf4f2f3fead8",
       "source": "jvn",
       "category": "vulnerability",
@@ -154,6 +221,61 @@
       "url": "https://jvn.jp/vu/JVNVU97027767/",
       "description": "Siemensから各製品向けのアドバイザリが公表されました。",
       "publishedAt": "2026-09-17T00:00:00Z",
+      "cves": []
+    },
+    {
+      "id": "183263d02bb0058dcd3f",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "The Hacker's Guide to Attacking AI Agents",
+      "url": "https://www.reddit.com/r/netsec/comments/1wib5on/the_hackers_guide_to_attacking_ai_agents/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-16T21:56:51Z",
+      "cves": []
+    },
+    {
+      "id": "e5c01b555f2e13c42a88",
+      "source": "krebs",
+      "category": "blog",
+      "priority": "normal",
+      "title": "Data Broker Radaris Loses Domains in Privacy Fight",
+      "url": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/",
+      "description": "The consumer data broker Radaris.com has long had a reputation for ignoring requests to remove personal information from its vast empire of people-search services online. That reputation caught up with the company recently in a lawsuit all…",
+      "publishedAt": "2026-09-16T18:14:22Z",
+      "cves": []
+    },
+    {
+      "id": "b752852048cddb43808f",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Evading Machine Learning Based Detections · MSec Operations Blog",
+      "url": "https://www.reddit.com/r/netsec/comments/1wi08xx/evading_machine_learning_based_detections_msec/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-16T15:21:18Z",
+      "cves": []
+    },
+    {
+      "id": "cad5bcdfc4a0b6ab40b7",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "I Missed One TLB Shootdown and Somehow Ended Up Controlling a Page Table",
+      "url": "https://www.reddit.com/r/netsec/comments/1why5qt/i_missed_one_tlb_shootdown_and_somehow_ended_up/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-16T14:03:18Z",
+      "cves": []
+    },
+    {
+      "id": "9ba7eb8364519be3adc4",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Bypassing Referer-Based CSRF with strict-origin-when-cross-origin",
+      "url": "https://www.reddit.com/r/netsec/comments/1whxuyv/bypassing_refererbased_csrf_with/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-16T13:52:01Z",
       "cves": []
     },
     {
@@ -201,6 +323,17 @@
       "cves": []
     },
     {
+      "id": "79b6748c97666661e0da",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Multiple Vulnerabilities in Frappe LMS Leading to Remote Code Execution",
+      "url": "https://www.reddit.com/r/netsec/comments/1wh4ffh/multiple_vulnerabilities_in_frappe_lms_leading_to/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-15T16:00:29Z",
+      "cves": []
+    },
+    {
       "id": "7de37ee33f6766bafb2a",
       "source": "cisa-kev",
       "category": "exploited",
@@ -238,6 +371,28 @@
       "cves": [
         "CVE-2026-76460"
       ]
+    },
+    {
+      "id": "be537631b3aaee86097e",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Getting into EMFI for 30€ thanks to globalization",
+      "url": "https://www.reddit.com/r/netsec/comments/1wgyaau/getting_into_emfi_for_30_thanks_to_globalization/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-15T11:56:01Z",
+      "cves": []
+    },
+    {
+      "id": "32c9c0e4d777fd16d8fa",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "UANIA OS: Authenticated Remote Code Execution",
+      "url": "https://www.reddit.com/r/netsec/comments/1wgsu52/uania_os_authenticated_remote_code_execution/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-15T06:50:39Z",
+      "cves": []
     },
     {
       "id": "7ab4f990ac254e659623",
@@ -286,6 +441,28 @@
       "cves": []
     },
     {
+      "id": "25849750324e317fc728",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Ask the Agent Nicely: Two Authorization Bypasses in n8n AI Agents",
+      "url": "https://www.reddit.com/r/netsec/comments/1wg4r8v/ask_the_agent_nicely_two_authorization_bypasses/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-14T14:19:22Z",
+      "cves": []
+    },
+    {
+      "id": "e47d737da3ba37e4c978",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "IBM Db2 Mirror for i: pre-auth RCE and the road to QSECOFR",
+      "url": "https://www.reddit.com/r/netsec/comments/1wg39a3/ibm_db2_mirror_for_i_preauth_rce_and_the_road_to/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-14T13:20:24Z",
+      "cves": []
+    },
+    {
       "id": "21086a709f84137541c1",
       "source": "jvn",
       "category": "vulnerability",
@@ -330,6 +507,28 @@
       "cves": [
         "CVE-2026-76461"
       ]
+    },
+    {
+      "id": "fd0e0fa3adc4857000e1",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Magento StyleSmuggler RCE: Report Poisoning to Code Execution",
+      "url": "https://www.reddit.com/r/netsec/comments/1wefzhl/magento_stylesmuggler_rce_report_poisoning_to/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-12T15:46:30Z",
+      "cves": []
+    },
+    {
+      "id": "ad4dba5c0a576eede845",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Beltdown2: Escaping the Cursor CLI sandbox",
+      "url": "https://www.reddit.com/r/netsec/comments/1wefmrs/beltdown2_escaping_the_cursor_cli_sandbox/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-12T15:31:47Z",
+      "cves": []
     },
     {
       "id": "9df81fc15f74d4e895d8",
@@ -417,6 +616,19 @@
       ]
     },
     {
+      "id": "0349810a5ef7bb30005a",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "CVE-2026-80428 Unauthenticated PHP Object Injection via Shibboleth - ILIAS < 9.22_ 10.0 < 10.10_ 11.0 < 11.3 - RCE",
+      "url": "https://www.exploit-db.com/exploits/52682",
+      "description": "EDB-ID 52682 · 新規登録 · multiple / remote / CVE-2026-80428",
+      "publishedAt": "2026-09-10T15:00:00Z",
+      "cves": [
+        "CVE-2026-80428"
+      ]
+    },
+    {
       "id": "b78bf0024cf665abf872",
       "source": "jvn",
       "category": "vulnerability",
@@ -473,6 +685,17 @@
       "url": "https://www.jpcert.or.jp/at/2026/at260025.html",
       "description": "",
       "publishedAt": "2026-09-09T02:20:00Z",
+      "cves": []
+    },
+    {
+      "id": "5b88a641d6865ebc780f",
+      "source": "krebs",
+      "category": "blog",
+      "priority": "normal",
+      "title": "Microsoft Plugs Nearly 1,000 Security Holes",
+      "url": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/",
+      "description": "Microsoft Corp. today issued updates to plug at least 974 security holes in its Windows operating systems and other software, by far its biggest single patch batch ever. Microsoft says artificial intelligence is helping to speed the discov…",
+      "publishedAt": "2026-09-08T21:44:22Z",
       "cves": []
     },
     {
@@ -615,6 +838,43 @@
       ]
     },
     {
+      "id": "dad0047c1905c870043d",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "Metabase 0.61.0 - Authenticated Remote Code Execution",
+      "url": "https://www.exploit-db.com/exploits/52680",
+      "description": "EDB-ID 52680 · 新規登録 · multiple / webapps / CVE-2026-59827",
+      "publishedAt": "2026-09-02T15:00:00Z",
+      "cves": [
+        "CVE-2026-59827"
+      ]
+    },
+    {
+      "id": "2cf951f5ef77f22253c9",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "FreePBX 17.0.2 - Remote Code Execution (RCE)",
+      "url": "https://www.exploit-db.com/exploits/52681",
+      "description": "EDB-ID 52681 · 新規登録 · multiple / webapps / CVE-2025-57819",
+      "publishedAt": "2026-09-02T15:00:00Z",
+      "cves": [
+        "CVE-2025-57819"
+      ]
+    },
+    {
+      "id": "bd2d7b781d612982c9c9",
+      "source": "krebs",
+      "category": "blog",
+      "priority": "normal",
+      "title": "FBI Probes Service Selling 153M+ Drivers Licenses",
+      "url": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
+      "description": "A new identity theft service launched on the dark web this week is selling digital scans of more than 153 million drivers licenses from people in the United States and Canada. Based on interviews with individuals whose licenses are availab…",
+      "publishedAt": "2026-09-01T22:40:28Z",
+      "cves": []
+    },
+    {
       "id": "df5bee05c2445c2fcea8",
       "source": "cisa-kev",
       "category": "exploited",
@@ -641,6 +901,19 @@
       ]
     },
     {
+      "id": "c5717b7a6d0251e56b45",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "PodcastGenerator 3.2.9 - Stored XSS",
+      "url": "https://www.exploit-db.com/exploits/52677",
+      "description": "EDB-ID 52677 · 新規登録 · multiple / webapps / CVE-2025-70336",
+      "publishedAt": "2026-09-01T15:00:00Z",
+      "cves": [
+        "CVE-2025-70336"
+      ]
+    },
+    {
       "id": "9c39fbef60e83adcb0bf",
       "source": "cisa-kev",
       "category": "exploited",
@@ -654,6 +927,19 @@
       ]
     },
     {
+      "id": "925ea8482d65f05fed8d",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "Marimo 0.20.4 - RCE",
+      "url": "https://www.exploit-db.com/exploits/52673",
+      "description": "EDB-ID 52673 · 新規登録 · multiple / webapps / CVE-2026-39987",
+      "publishedAt": "2026-09-01T15:00:00Z",
+      "cves": [
+        "CVE-2026-39987"
+      ]
+    },
+    {
       "id": "923ffd10d5f508ac2916",
       "source": "cisa-kev",
       "category": "exploited",
@@ -664,6 +950,19 @@
       "publishedAt": "2026-09-01T15:00:00Z",
       "cves": [
         "CVE-2026-82329"
+      ]
+    },
+    {
+      "id": "6f275dcfe06c7bbd502f",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "Langflow 1.10.0 - RCE",
+      "url": "https://www.exploit-db.com/exploits/52675",
+      "description": "EDB-ID 52675 · 新規登録 · multiple / webapps / CVE-2026-9198",
+      "publishedAt": "2026-09-01T15:00:00Z",
+      "cves": [
+        "CVE-2026-9198"
       ]
     },
     {
@@ -693,6 +992,19 @@
       ]
     },
     {
+      "id": "2aba84775d33e4361629",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "EVerest 2025.9.0 - DoS",
+      "url": "https://www.exploit-db.com/exploits/52679",
+      "description": "EDB-ID 52679 · 新規登録 · multiple / dos / CVE-2025-68137",
+      "publishedAt": "2026-09-01T15:00:00Z",
+      "cves": [
+        "CVE-2025-68137"
+      ]
+    },
+    {
       "id": "28aa58cabe40babb92a6",
       "source": "cisa-kev",
       "category": "exploited",
@@ -703,6 +1015,217 @@
       "publishedAt": "2026-09-01T15:00:00Z",
       "cves": [
         "CVE-2026-49869"
+      ]
+    },
+    {
+      "id": "21a1237ff786a5d4879b",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "Ghost_CMS 6.19.0 - Remote Code Execution",
+      "url": "https://www.exploit-db.com/exploits/52676",
+      "description": "EDB-ID 52676 · 新規登録 · multiple / webapps / CVE-2026-29053",
+      "publishedAt": "2026-09-01T15:00:00Z",
+      "cves": [
+        "CVE-2026-29053"
+      ]
+    },
+    {
+      "id": "1db95655dcea59ffef8e",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "Bludit CMS 3.20.0 - Reflected Cross-Site Scripting",
+      "url": "https://www.exploit-db.com/exploits/52678",
+      "description": "EDB-ID 52678 · 新規登録 · multiple / webapps / CVE-2026-41456",
+      "publishedAt": "2026-09-01T15:00:00Z",
+      "cves": [
+        "CVE-2026-41456"
+      ]
+    },
+    {
+      "id": "0834d769ab062b895d80",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "Fullhan FH8626V100 - Multiple Vulnerabilities",
+      "url": "https://www.exploit-db.com/exploits/52674",
+      "description": "EDB-ID 52674 · 新規登録 · multiple / hardware / CVE-2026-51407;CVE-2026-51406;CVE-2026-51405;CVE-2026-51404;CVE-2026-51403;CVE-2026-51402",
+      "publishedAt": "2026-09-01T15:00:00Z",
+      "cves": [
+        "CVE-2026-51402",
+        "CVE-2026-51403",
+        "CVE-2026-51404",
+        "CVE-2026-51405",
+        "CVE-2026-51406",
+        "CVE-2026-51407"
+      ]
+    },
+    {
+      "id": "eb3a533db445574a29cc",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "Bludit CMS - Stored XSS",
+      "url": "https://www.exploit-db.com/exploits/52670",
+      "description": "EDB-ID 52670 · 新規登録 · multiple / webapps",
+      "publishedAt": "2026-08-31T15:00:00Z",
+      "cves": []
+    },
+    {
+      "id": "91b42cd63ddfc0eacf98",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "Payload CMS 3.72.0 - Blind SQL Injection",
+      "url": "https://www.exploit-db.com/exploits/52671",
+      "description": "EDB-ID 52671 · 新規登録 · multiple / webapps / CVE-2026-25544",
+      "publishedAt": "2026-08-31T15:00:00Z",
+      "cves": [
+        "CVE-2026-25544"
+      ]
+    },
+    {
+      "id": "6531fe91a78cfbf934c9",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "miniOrange 5.4.3 - Unauthenticated Auth Bypass",
+      "url": "https://www.exploit-db.com/exploits/52668",
+      "description": "EDB-ID 52668 · 新規登録 · multiple / webapps / CVE-2026-15013",
+      "publishedAt": "2026-08-31T15:00:00Z",
+      "cves": [
+        "CVE-2026-15013"
+      ]
+    },
+    {
+      "id": "5b299a222c4ce0fe0076",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "EasyAppointments 1.5.1 - Blind SQL Injection",
+      "url": "https://www.exploit-db.com/exploits/52667",
+      "description": "EDB-ID 52667 · 新規登録 · multiple / webapps / CVE-2025-50455",
+      "publishedAt": "2026-08-31T15:00:00Z",
+      "cves": [
+        "CVE-2025-50455"
+      ]
+    },
+    {
+      "id": "58ea909f60c6771c6e59",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "Wolf CMS 0.8.3.1 - RCE v",
+      "url": "https://www.exploit-db.com/exploits/52672",
+      "description": "EDB-ID 52672 · 新規登録 · multiple / webapps / CVE-2026-67206",
+      "publishedAt": "2026-08-31T15:00:00Z",
+      "cves": [
+        "CVE-2026-67206"
+      ]
+    },
+    {
+      "id": "405eaf785047d33b5180",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "Grav CMS 2.0.7 - RCE",
+      "url": "https://www.exploit-db.com/exploits/52669",
+      "description": "EDB-ID 52669 · 新規登録 · multiple / webapps / CVE-2026-65008",
+      "publishedAt": "2026-08-31T15:00:00Z",
+      "cves": [
+        "CVE-2026-65008"
+      ]
+    },
+    {
+      "id": "ecf1f7af80e095ba51eb",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "CubeCart 6.7.4 - SQL injection",
+      "url": "https://www.exploit-db.com/exploits/52664",
+      "description": "EDB-ID 52664 · 新規登録 · multiple / webapps / CVE-2026-54647",
+      "publishedAt": "2026-08-30T15:00:00Z",
+      "cves": [
+        "CVE-2026-54647"
+      ]
+    },
+    {
+      "id": "d95a885629049318e286",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "C-MOR 6.0104 - Directory Traversal",
+      "url": "https://www.exploit-db.com/exploits/52666",
+      "description": "EDB-ID 52666 · 新規登録 · multiple / webapps / CVE-2026-51134",
+      "publishedAt": "2026-08-30T15:00:00Z",
+      "cves": [
+        "CVE-2026-51134"
+      ]
+    },
+    {
+      "id": "c6d1f72a311ba6845000",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "Linksys E1200_2.0.04 - Unauthenticated OS Command Injection",
+      "url": "https://www.exploit-db.com/exploits/52660",
+      "description": "EDB-ID 52660 · 新規登録 · hardware / webapps / CVE-2025-60689",
+      "publishedAt": "2026-08-30T15:00:00Z",
+      "cves": [
+        "CVE-2025-60689"
+      ]
+    },
+    {
+      "id": "b5ea4859187e17661696",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "C-MOR 6.0104 - Cross-Site Scripting (XSS)",
+      "url": "https://www.exploit-db.com/exploits/52665",
+      "description": "EDB-ID 52665 · 新規登録 · hardware / webapps / CVE-2026-51133",
+      "publishedAt": "2026-08-30T15:00:00Z",
+      "cves": [
+        "CVE-2026-51133"
+      ]
+    },
+    {
+      "id": "72f3eece8c17050ba355",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "Langflow 1.8.4 - Path Traversal to Remote Code Execution",
+      "url": "https://www.exploit-db.com/exploits/52659",
+      "description": "EDB-ID 52659 · 新規登録 · multiple / webapps / CVE-2026-5027",
+      "publishedAt": "2026-08-30T15:00:00Z",
+      "cves": [
+        "CVE-2026-5027"
+      ]
+    },
+    {
+      "id": "4f2e77d24b5c9ada0364",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "CubeCart 6.7.4 - SQL",
+      "url": "https://www.exploit-db.com/exploits/52663",
+      "description": "EDB-ID 52663 · 新規登録 · multiple / webapps / CVE-2026-54646",
+      "publishedAt": "2026-08-30T15:00:00Z",
+      "cves": [
+        "CVE-2026-54646"
+      ]
+    },
+    {
+      "id": "38e5f5f43fafc6d41209",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "CubeCart 6.7.4 - Stored XSS",
+      "url": "https://www.exploit-db.com/exploits/52662",
+      "description": "EDB-ID 52662 · 新規登録 · multiple / webapps / CVE-2026-54645",
+      "publishedAt": "2026-08-30T15:00:00Z",
+      "cves": [
+        "CVE-2026-54645"
       ]
     },
     {
@@ -719,6 +1242,19 @@
       ]
     },
     {
+      "id": "24cb7f46685a7ccd9abf",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "CubeCart 6.7.4 - Cross-Site Scripting",
+      "url": "https://www.exploit-db.com/exploits/52661",
+      "description": "EDB-ID 52661 · 新規登録 · multiple / webapps / CVE-2026-54644",
+      "publishedAt": "2026-08-30T15:00:00Z",
+      "cves": [
+        "CVE-2026-54644"
+      ]
+    },
+    {
       "id": "101a84e891d6ae063c36",
       "source": "cisa-kev",
       "category": "exploited",
@@ -730,6 +1266,30 @@
       "cves": [
         "CVE-2026-82078"
       ]
+    },
+    {
+      "id": "f3551eec2324e2c52f7f",
+      "source": "exploit-db",
+      "category": "exploit",
+      "priority": "exploit-published",
+      "title": "CVE-2026-42167 - ProFTPD mod_sql post-authentication SQLi - RCE",
+      "url": "https://www.exploit-db.com/exploits/52658",
+      "description": "EDB-ID 52658 · 更新 · multiple / remote / CVE-2026-42167",
+      "publishedAt": "2026-08-27T15:00:00Z",
+      "cves": [
+        "CVE-2026-42167"
+      ]
+    },
+    {
+      "id": "885ddc9b0a9c5c1b51a7",
+      "source": "krebs",
+      "category": "blog",
+      "priority": "normal",
+      "title": "Two Alleged ‘TeamPCP’ Hackers Arrested in Australia",
+      "url": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/",
+      "description": "Authorities in Australia have arrested two men believed to be members of TeamPCP, a prolific cybercrime and data extortion group blamed for perpetrating the longest running spree of software supply chain attacks ever. In a statement releas…",
+      "publishedAt": "2026-08-27T11:04:15Z",
+      "cves": []
     },
     {
       "id": "6c554ac88837e6dd12d8",

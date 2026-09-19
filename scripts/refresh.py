@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import hashlib
 import html
+import csv
+import io
 import json
 import re
 import sys
@@ -63,6 +65,19 @@ SOURCES = (
         "url": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json",
         "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
         "kind": "kev",
+    },
+    {
+        "id": "krebs", "name": "Krebs on Security", "category": "blog",
+        "url": "https://krebsonsecurity.com/feed/", "home": "https://krebsonsecurity.com/", "kind": "xml",
+    },
+    {
+        "id": "reddit-netsec", "name": "Reddit r/netsec 週間上位", "category": "community",
+        "url": "https://www.reddit.com/r/netsec/top/.rss?t=week", "home": "https://www.reddit.com/r/netsec/top/?t=week", "kind": "reddit",
+    },
+    {
+        "id": "exploit-db", "name": "Exploit Database", "category": "exploit",
+        "url": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/files_exploits.csv",
+        "home": "https://www.exploit-db.com/", "kind": "exploit-db",
     },
 )
 
@@ -195,6 +210,40 @@ def parse_kev(payload: bytes, source: dict) -> list[dict]:
     return result
 
 
+def parse_exploit_db(payload: bytes, source: dict) -> list[dict]:
+    """Use the official CSV's added/updated date, not the exploit's original publication date."""
+    reader = csv.DictReader(io.StringIO(payload.decode("utf-8-sig")))
+    required = {"id", "description", "date_added", "date_updated", "codes"}
+    if not reader.fieldnames or not required.issubset(reader.fieldnames):
+        raise ValueError("Exploit Database CSV columns are missing")
+    cutoff = datetime.now(timezone.utc) - timedelta(days=WINDOW_DAYS)
+    result = []
+    for row in reader:
+        edb_id = (row.get("id") or "").strip()
+        if not re.fullmatch(r"\d{1,8}", edb_id):
+            continue
+        added = parse_date(row.get("date_added"))
+        updated = parse_date(row.get("date_updated"))
+        changed = max((date for date in (added, updated) if date), default=None)
+        if not changed or changed < cutoff:
+            continue
+        change = "更新" if updated and added and updated > added else "新規登録"
+        details = " / ".join(filter(None, [row.get("platform", "").strip(), row.get("type", "").strip(), row.get("codes", "").strip()]))
+        item = build_item(source, row.get("description") or "", f"https://www.exploit-db.com/exploits/{edb_id}", f"EDB-ID {edb_id} · {change}" + (f" · {details}" if details else ""), changed)
+        if item:
+            item["priority"] = "exploit-published"
+            result.append(item)
+    return result
+
+
+def parse_reddit(payload: bytes, source: dict) -> list[dict]:
+    items = parse_xml_feed(payload, source)
+    for item in items:
+        # The public Atom feed contains neither vote counts nor ranking scores.
+        item["description"] = "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。"
+    return items
+
+
 def parse_ipa_urgent_urls(payload: bytes) -> set[str]:
     """Read IPA's own urgent labels from its current alert index."""
     page = payload.decode("utf-8", errors="replace")
@@ -204,10 +253,13 @@ def parse_ipa_urgent_urls(payload: bytes) -> set[str]:
     }
 
 
-def fetch(url: str) -> bytes:
+def fetch(url: str, limit: int = 5_000_000) -> bytes:
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/xml, application/json, text/xml, */*"})
     with urllib.request.urlopen(request, timeout=25) as response:
-        return response.read(5_000_001)
+        payload = response.read(limit + 1)
+        if len(payload) > limit:
+            raise ValueError("feed exceeds the download limit")
+        return payload
 
 
 def load_existing() -> dict:
@@ -221,18 +273,21 @@ def refresh() -> dict:
     cutoff = now - timedelta(days=WINDOW_DAYS)
     old = load_existing()
     by_id = {}
+    active_sources = {source["id"] for source in SOURCES}
     for item in old.get("items", []):
         published = parse_date(item.get("publishedAt"))
-        if published and published >= cutoff and item.get("id"):
+        if published and published >= cutoff and item.get("id") and item.get("source") in active_sources:
             by_id[item["id"]] = item
 
     source_status = []
     success_count = 0
     for source in SOURCES:
         try:
-            payload = fetch(source["url"])
-            items = parse_kev(payload, source) if source["kind"] == "kev" else parse_xml_feed(payload, source)
-            if not items:
+            payload = fetch(source["url"], 15_000_000 if source["kind"] == "exploit-db" else 5_000_000)
+            parser = {"kev": parse_kev, "reddit": parse_reddit, "exploit-db": parse_exploit_db}.get(source["kind"], parse_xml_feed)
+            items = parser(payload, source)
+            # The official exploit index can have no additions in the current window.
+            if not items and source["kind"] != "exploit-db":
                 raise ValueError("feed contained no dated entries")
             if source["id"] == "ipa":
                 try:

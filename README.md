@@ -1,12 +1,14 @@
 # Security Feed
 
-IPA、JPCERT/CC、JVN、JPCERT/CC Eyes、CISA KEV の公開情報をまとめて読む個人用ニュースフィードです。[internet_news](https://github.com/drawcia0122/internet_news) の「重要な話題、カテゴリ別フィード、履歴、定期更新」という構成を参考にしています。記事の本文は転載せず、一次情報へのリンクを表示します。
+IPA、JPCERT/CC、JVN、JPCERT/CC Eyes、CISA KEV、Krebs on Security、Reddit r/netsec、Exploit Database の公開情報をまとめて読む個人用ニュースフィードです。[internet_news](https://github.com/drawcia0122/internet_news) の「重要な話題、カテゴリ別フィード、履歴、定期更新」という構成を参考にしています。記事の本文は転載せず、元記事へのリンクを表示します。
 
 公開 URL: <https://CorruptionFutoshi.github.io/SecurityNews/>
 
 ## 機能
 
 - 緊急の注意喚起と CISA KEV の新規登録を優先表示
+- Exploit Database の新規登録と更新を専用欄で表示（30日分）。PoC 公開と実際の悪用確認は区別
+- Krebs on Security の記事と Reddit r/netsec の週間上位投稿を表示
 - 直近24時間、7日、30日での絞り込み
 - カテゴリ・情報源・キーワード・CVE による検索
 - 既読と保存済みの管理（ブラウザの `localStorage`。端末間では同期されません）
@@ -36,4 +38,4 @@ GitHub Pages のサイトは公開されます。非公開の資産情報や個�
 
 ## データ形式
 
-`scripts/refresh.py` が公開 RSS/Atom と [CISA KEV の公式ミラー](https://github.com/cisagov/kev-data)を取得します。タイトル、短い説明、日時、CVE、元記事 URL のみ保存します。情報の正確性や対策内容は必ずリンク先で確認してください。
+`scripts/refresh.py` が公開 RSS/Atom、[CISA KEV の公式ミラー](https://github.com/cisagov/kev-data)、[Exploit Database の公式 CSV](https://gitlab.com/exploit-database/exploitdb/-/blob/main/files_exploits.csv)を取得します。Reddit は r/netsec の週間上位 RSS を使い、投票数や正確な順位は保存しません。Exploit Database は `date_added` と `date_updated` から直近30日の変更を表示します。タイトル、短い説明、日時、CVE、元記事 URL のみ保存します。情報の正確性や対策内容は必ずリンク先で確認してください。

@@ -1,6 +1,7 @@
 import json
 import unittest
-from scripts.refresh import SOURCES, parse_ipa_urgent_urls, parse_kev, parse_xml_feed, plain_text
+from datetime import datetime, timezone
+from scripts.refresh import SOURCES, parse_exploit_db, parse_ipa_urgent_urls, parse_kev, parse_reddit, parse_xml_feed, plain_text
 
 
 class FeedParsingTests(unittest.TestCase):
@@ -45,6 +46,30 @@ class FeedParsingTests(unittest.TestCase):
     def test_ipa_urgent_label_comes_from_index(self):
         payload = b'<li class="news-list__item" data-search="urgent"><a href="/security/security-alert/2026/example.html">Alert</a></li>'
         self.assertEqual(parse_ipa_urgent_urls(payload), {'https://www.ipa.go.jp/security/security-alert/2026/example.html'})
+
+    def test_exploit_db_uses_change_date_without_claiming_active_exploitation(self):
+        today = datetime.now(timezone.utc).date().isoformat()
+        payload = ("id,description,date_added,date_updated,codes,platform,type\n"
+                   f'12345,"Product - Remote Code Execution",2020-01-01,{today},CVE-2026-12345,linux,remote\n').encode()
+        source = next(source for source in SOURCES if source['id'] == 'exploit-db')
+        item = parse_exploit_db(payload, source)[0]
+        self.assertEqual(item['url'], 'https://www.exploit-db.com/exploits/12345')
+        self.assertEqual(item['priority'], 'exploit-published')
+        self.assertEqual(item['category'], 'exploit')
+        self.assertIn('更新', item['description'])
+        self.assertEqual(item['cves'], ['CVE-2026-12345'])
+
+    def test_reddit_post_is_labeled_as_community_without_score(self):
+        payload = b'''<feed xmlns="http://www.w3.org/2005/Atom"><entry>
+          <title>Research discussion</title>
+          <link rel="alternate" href="https://www.reddit.com/r/netsec/comments/abc/test/" />
+          <updated>2026-09-18T00:00:00Z</updated><content>submitted by user</content>
+        </entry></feed>'''
+        source = next(source for source in SOURCES if source['id'] == 'reddit-netsec')
+        item = parse_reddit(payload, source)[0]
+        self.assertEqual(item['category'], 'community')
+        self.assertEqual(item['priority'], 'normal')
+        self.assertNotIn('submitted by', item['description'])
 
 
 if __name__ == "__main__":
