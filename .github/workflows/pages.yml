@@ -1,0 +1,72 @@
+name: Refresh and deploy Security Feed
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 0,6,12,18 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: security-feed-pages
+  cancel-in-progress: false
+
+jobs:
+  refresh-and-deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Test feed parsing
+        run: python -m unittest discover -s tests -v
+
+      - name: Refresh security information
+        run: python scripts/refresh.py
+
+      - name: Commit refreshed data
+        run: |
+          if git diff --quiet -- data/feed.json; then
+            echo "Feed data is unchanged."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/feed.json
+            git commit -m "chore: refresh security feed"
+            git push origin HEAD:main
+          fi
+
+      - name: Prepare static site
+        run: |
+          mkdir -p _site/data
+          cp index.html app.js styles.css favicon.svg _site/
+          cp data/feed.json _site/data/
+          touch _site/.nojekyll
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

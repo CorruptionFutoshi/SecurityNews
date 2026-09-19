@@ -1,0 +1,891 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-19T13:37:28Z",
+  "windowDays": 30,
+  "sources": [
+    {
+      "id": "ipa",
+      "name": "IPA",
+      "home": "https://www.ipa.go.jp/security/security-alert/index.html",
+      "ok": true,
+      "fetchedAt": "2026-09-19T13:37:28Z"
+    },
+    {
+      "id": "jpcert",
+      "name": "JPCERT/CC",
+      "home": "https://www.jpcert.or.jp/at/",
+      "ok": true,
+      "fetchedAt": "2026-09-19T13:37:28Z"
+    },
+    {
+      "id": "jvn",
+      "name": "JVN",
+      "home": "https://jvn.jp/",
+      "ok": true,
+      "fetchedAt": "2026-09-19T13:37:28Z"
+    },
+    {
+      "id": "jpcert-eyes",
+      "name": "JPCERT/CC Eyes",
+      "home": "https://blogs.jpcert.or.jp/ja/",
+      "ok": true,
+      "fetchedAt": "2026-09-19T13:37:28Z"
+    },
+    {
+      "id": "cisa-kev",
+      "name": "CISA KEV",
+      "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "ok": true,
+      "fetchedAt": "2026-09-19T13:37:28Z"
+    }
+  ],
+  "items": [
+    {
+      "id": "8beb21ff8f628fceb293",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "ISC BINDにおける複数の脆弱性（2026年9月）",
+      "url": "https://jvn.jp/vu/JVNVU97703430/",
+      "description": "ISC（Internet Systems Consortium）から、ISC BINDの複数の脆弱性が公開されました。",
+      "publishedAt": "2026-09-18T07:45:00Z",
+      "cves": []
+    },
+    {
+      "id": "9612930ef9c4941f95d8",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年09月17日）",
+      "url": "https://jvn.jp/vu/JVNVU91030326/",
+      "description": "米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。",
+      "publishedAt": "2026-09-18T00:30:15Z",
+      "cves": []
+    },
+    {
+      "id": "6641695b8c628086d430",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "DokployにおけるOSコマンドインジェクションの脆弱性",
+      "url": "https://jvn.jp/vu/JVNVU94707104/",
+      "description": "CERT/CCから本件に関するアドバイザリが公表されました。",
+      "publishedAt": "2026-09-18T00:30:00Z",
+      "cves": []
+    },
+    {
+      "id": "c9dbec28682a4fad4a27",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Linux Kernel — CVE-2025-39682",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-39682",
+      "description": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended recvmsg() record-type handling, potenti…",
+      "publishedAt": "2026-09-17T15:00:00Z",
+      "cves": [
+        "CVE-2025-39682"
+      ]
+    },
+    {
+      "id": "9d2d097e2951b75a133e",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Linux Kernel — CVE-2026-53266",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-53266",
+      "description": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment backed by a splice-imported file page. The…",
+      "publishedAt": "2026-09-17T15:00:00Z",
+      "cves": [
+        "CVE-2026-53266"
+      ]
+    },
+    {
+      "id": "4ab051d170e48bfcedd3",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Linux Kernel — CVE-2025-39964",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-39964",
+      "description": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's internal state.",
+      "publishedAt": "2026-09-17T15:00:00Z",
+      "cves": [
+        "CVE-2025-39964"
+      ]
+    },
+    {
+      "id": "cb345539bf4f2f3fead8",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "スマートフォンアプリ「東北電力 よりそうｅねっと」におけるハードコードされた暗号鍵使用の脆弱性",
+      "url": "https://jvn.jp/jp/JVN93985674/",
+      "description": "東北電力株式会社が提供するスマートフォンアプリ「東北電力 よりそうｅねっと」には、ハードコードされた暗号鍵使用の脆弱性が存在します。",
+      "publishedAt": "2026-09-17T05:00:00Z",
+      "cves": []
+    },
+    {
+      "id": "4a103331f38bf32ee919",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "MLflowのdspyとstatsmodelsフレーバーにおけるpickleのデシリアライズ制御回避の脆弱性",
+      "url": "https://jvn.jp/vu/JVNVU94390979/",
+      "description": "CERT/CCから本件に関するアドバイザリが公表されました。",
+      "publishedAt": "2026-09-17T00:30:15Z",
+      "cves": []
+    },
+    {
+      "id": "6c95a2dec976583a6fa2",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "Sentry Seerにおける攻撃者が制御する入力が管理者権限で実行される脆弱性",
+      "url": "https://jvn.jp/vu/JVNVU91019649/",
+      "description": "CERT/CCから本件に関するアドバイザリが公表されました。",
+      "publishedAt": "2026-09-17T00:30:00Z",
+      "cves": []
+    },
+    {
+      "id": "8c2636fc1b843e027b27",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "Siemens製品に対するアップデート（2026年9月）",
+      "url": "https://jvn.jp/vu/JVNVU97027767/",
+      "description": "Siemensから各製品向けのアドバイザリが公表されました。",
+      "publishedAt": "2026-09-17T00:00:00Z",
+      "cves": []
+    },
+    {
+      "id": "2fa5047cfc8bda1483d6",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "QNDにおける複数の脆弱性",
+      "url": "https://jvn.jp/jp/JVN95825631/",
+      "description": "クオリティソフト株式会社が提供するQNDには、複数の脆弱性が存在します。",
+      "publishedAt": "2026-09-16T03:00:15Z",
+      "cves": []
+    },
+    {
+      "id": "7e01c60c02f44d667582",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "XikeStor製Layer3スイッチのコンフィグレーションデータダウンロード機能における認証欠如の脆弱性",
+      "url": "https://jvn.jp/jp/JVN45281119/",
+      "description": "XikeStor製Layer3スイッチは、認証なしにコンフィグレーションデータをダウンロード可能です。",
+      "publishedAt": "2026-09-16T03:00:00Z",
+      "cves": []
+    },
+    {
+      "id": "029cb458d9e86aad9557",
+      "source": "jpcert",
+      "category": "alert",
+      "priority": "normal",
+      "title": "Weekly Report: 複数のマイクロソフト製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr260916.html",
+      "description": "複数のマイクロソフト製品に脆弱性",
+      "publishedAt": "2026-09-16T00:06:00Z",
+      "cves": []
+    },
+    {
+      "id": "bee66feb5dd808a31751",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年09月15日）",
+      "url": "https://jvn.jp/vu/JVNVU93448623/",
+      "description": "米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。",
+      "publishedAt": "2026-09-16T00:00:00Z",
+      "cves": []
+    },
+    {
+      "id": "7de37ee33f6766bafb2a",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Acronis Backup — CVE-2026-87886",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-87886",
+      "description": "Acronis Backup plugin for cPanel & WHM and extension for Plesk contains an incorrect default permissions vulnerability that could allow for privilege escalation.",
+      "publishedAt": "2026-09-15T15:00:00Z",
+      "cves": [
+        "CVE-2026-87886"
+      ]
+    },
+    {
+      "id": "4b3d0324cbb20a785eb9",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Google Pixel — CVE-2026-58704",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-58704",
+      "description": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges.",
+      "publishedAt": "2026-09-15T15:00:00Z",
+      "cves": [
+        "CVE-2026-58704"
+      ]
+    },
+    {
+      "id": "06ea4974ee0f666e8066",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Cisco Identity Services Engine — CVE-2026-76460",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-76460",
+      "description": "Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) contain an incorrect use of privileged APIs vulnerability that could allow an unauthenticated, remote attacker to gain unauthorized access to the affec…",
+      "publishedAt": "2026-09-15T15:00:00Z",
+      "cves": [
+        "CVE-2026-76460"
+      ]
+    },
+    {
+      "id": "7ab4f990ac254e659623",
+      "source": "jpcert",
+      "category": "alert",
+      "priority": "normal",
+      "title": "注意喚起: Cisco Secure Email GatewayにおけるSQLインジェクションの脆弱性（CVE-2026-76461）に関する注意喚起 (公開)",
+      "url": "https://www.jpcert.or.jp/at/2026/at260027.html",
+      "description": "",
+      "publishedAt": "2026-09-15T06:42:00Z",
+      "cves": [
+        "CVE-2026-76461"
+      ]
+    },
+    {
+      "id": "15f372119c33788a4c75",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "Androidアプリ「【保護者専用】まなびポケット」におけるアクセス制限不備の脆弱性",
+      "url": "https://jvn.jp/jp/JVN72918755/",
+      "description": "NTTドコモビジネス株式会社が提供するAndroidアプリ「【保護者専用】まなびポケット」には、アクセス制限不備の脆弱性が存在します。",
+      "publishedAt": "2026-09-15T05:00:00Z",
+      "cves": []
+    },
+    {
+      "id": "9b69a4a8bd9fcb4f4eb2",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "Lite-On製O-RU「FF-RFI079I4」および「FF-RFI078I4」における複数の脆弱性",
+      "url": "https://jvn.jp/jp/JVN02049764/",
+      "description": "LITE-ON Technology Corporationが提供するO-RU「FF-RFI079I4」および「FF-RFI078I4」には、複数の脆弱性が存在します。",
+      "publishedAt": "2026-09-15T03:00:00Z",
+      "cves": []
+    },
+    {
+      "id": "74ca47ce585c29050145",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "パナソニック インダストリー製MINAS A5/A6用Windows USBデバイスドライバにおけるバッファオーバーフローの脆弱性",
+      "url": "https://jvn.jp/vu/JVNVU99837984/",
+      "description": "パナソニック インダストリー株式会社が提供するMINAS A5/A6用Windows USBデバイスドライバには、バッファオーバーフローの脆弱性が存在します。",
+      "publishedAt": "2026-09-15T01:00:00Z",
+      "cves": []
+    },
+    {
+      "id": "21086a709f84137541c1",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "コンテック製無線LAN FLEXLANシリーズにおける複数の脆弱性",
+      "url": "https://jvn.jp/vu/JVNVU99009004/",
+      "description": "株式会社コンテックが提供する無線LAN FLEXLANシリーズには、複数の脆弱性が存在します。",
+      "publishedAt": "2026-09-14T09:00:00Z",
+      "cves": []
+    },
+    {
+      "id": "760b761ad499254f81ea",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "Androidアプリ「YAMAP / ヤマップ登山地図アプリ」におけるアクセス制限不備の脆弱性",
+      "url": "https://jvn.jp/jp/JVN69877538/",
+      "description": "株式会社ヤマップが提供するAndroidアプリ「YAMAP / ヤマップ登山地図アプリ」には、WebViewに対するアクセス制限不備の脆弱性が存在します。",
+      "publishedAt": "2026-09-14T03:00:00Z",
+      "cves": []
+    },
+    {
+      "id": "22c093348481848120bc",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "ExLlamaV3のexllamav3_extモジュールにおける不適切な入力検証の脆弱性",
+      "url": "https://jvn.jp/vu/JVNVU94022278/",
+      "description": "CERT/CCから本件に関するアドバイザリが公表されました。",
+      "publishedAt": "2026-09-14T01:00:00Z",
+      "cves": []
+    },
+    {
+      "id": "a763a7482763d943b862",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Cisco Secure Email Gateway — CVE-2026-76461",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-76461",
+      "description": "Cisco AsyncOS software for Cisco Secure Email Gateway (SEG) contains a SQL injection vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the underlying operating system.",
+      "publishedAt": "2026-09-13T15:00:00Z",
+      "cves": [
+        "CVE-2026-76461"
+      ]
+    },
+    {
+      "id": "9df81fc15f74d4e895d8",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "a-blog cmsにおけるパストラバーサルの脆弱性",
+      "url": "https://jvn.jp/jp/JVN20829034/",
+      "description": "有限会社アップルップルが提供するa-blog cmsには、パストラバーサルの脆弱性が存在します。",
+      "publishedAt": "2026-09-11T03:00:00Z",
+      "cves": []
+    },
+    {
+      "id": "26525f2b7b6b37799391",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年09月10日）",
+      "url": "https://jvn.jp/vu/JVNVU94404414/",
+      "description": "米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。",
+      "publishedAt": "2026-09-11T01:30:15Z",
+      "cves": []
+    },
+    {
+      "id": "617d661872e80bd966bf",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "AOMEI Backupperのamwrtdrv.sysカーネルドライバにおける権限昇格の脆弱性",
+      "url": "https://jvn.jp/vu/JVNVU95258183/",
+      "description": "CERT/CCから本件に関するアドバイザリが公表されました。",
+      "publishedAt": "2026-09-11T01:30:00Z",
+      "cves": []
+    },
+    {
+      "id": "bf562fb09276766c27dc",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "ConnectWise ScreenConnect — CVE-2026-84869",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-84869",
+      "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote session without authorization or host confir…",
+      "publishedAt": "2026-09-10T15:00:00Z",
+      "cves": [
+        "CVE-2026-84869"
+      ]
+    },
+    {
+      "id": "9191d1d4ac43faa5bc21",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "JFrog Artifactory — CVE-2026-42018",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-42018",
+      "description": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive resources.",
+      "publishedAt": "2026-09-10T15:00:00Z",
+      "cves": [
+        "CVE-2026-42018"
+      ]
+    },
+    {
+      "id": "79e3d0d7d3366865161b",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "JFrog Artifactory — CVE-2026-42016",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-42016",
+      "description": "JFrog Artifactory contains an incorrect authorization vulnerability that leads to a privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope.",
+      "publishedAt": "2026-09-10T15:00:00Z",
+      "cves": [
+        "CVE-2026-42016"
+      ]
+    },
+    {
+      "id": "12db941644cacfeed92e",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "GitLab Community Edition and Enterprise Edition — CVE-2026-85706",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-85706",
+      "description": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing authentication enforcement in the repositor…",
+      "publishedAt": "2026-09-10T15:00:00Z",
+      "cves": [
+        "CVE-2026-85706"
+      ]
+    },
+    {
+      "id": "b78bf0024cf665abf872",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "コンテック製PC-HELPERシリーズにおける複数の脆弱性",
+      "url": "https://jvn.jp/vu/JVNVU90314828/",
+      "description": "株式会社コンテックが提供するPC-HELPERシリーズには、複数の脆弱性が存在します。",
+      "publishedAt": "2026-09-10T07:10:00Z",
+      "cves": []
+    },
+    {
+      "id": "f132553702463b33986c",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "MikroTik RouterOS — CVE-2026-67277",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-67277",
+      "description": "MikroTik RouterOS contains a missing authentication for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
+      "publishedAt": "2026-09-09T15:00:00Z",
+      "cves": [
+        "CVE-2026-67277"
+      ]
+    },
+    {
+      "id": "707dc21b11d40c59eec3",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "MikroTik RouterOS — CVE-2026-86060",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-86060",
+      "description": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacker to change the trusted RouterOS policy mask, leading to privilege escalation.",
+      "publishedAt": "2026-09-09T15:00:00Z",
+      "cves": [
+        "CVE-2026-86060"
+      ]
+    },
+    {
+      "id": "afc4903a35345a565a95",
+      "source": "jpcert",
+      "category": "alert",
+      "priority": "normal",
+      "title": "注意喚起: Adobe AcrobatおよびReaderの脆弱性（APSB26-141）に関する注意喚起 (公開)",
+      "url": "https://www.jpcert.or.jp/at/2026/at260026.html",
+      "description": "",
+      "publishedAt": "2026-09-09T02:20:00Z",
+      "cves": []
+    },
+    {
+      "id": "6d76c6efe89c3e1b8f54",
+      "source": "jpcert",
+      "category": "alert",
+      "priority": "normal",
+      "title": "注意喚起: 2026年9月マイクロソフトセキュリティ更新プログラムに関する注意喚起 (公開)",
+      "url": "https://www.jpcert.or.jp/at/2026/at260025.html",
+      "description": "",
+      "publishedAt": "2026-09-09T02:20:00Z",
+      "cves": []
+    },
+    {
+      "id": "ec8e13fa3a9560408b37",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Fortinet Multiple Products — CVE-2025-25249",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-25249",
+      "description": "Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets.",
+      "publishedAt": "2026-09-08T15:00:00Z",
+      "cves": [
+        "CVE-2025-25249"
+      ]
+    },
+    {
+      "id": "c57cbe4255097353b199",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Cisco Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management — CVE-2026-20079",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-20079",
+      "description": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management contain an authentication Bypass using an alternate path or channel vulnerability that could allow an unauthenticated, remote…",
+      "publishedAt": "2026-09-08T15:00:00Z",
+      "cves": [
+        "CVE-2026-20079"
+      ]
+    },
+    {
+      "id": "c45ff52c6312d045709b",
+      "source": "ipa",
+      "category": "alert",
+      "priority": "urgent",
+      "title": "Microsoft 製品の脆弱性対策について(2026年9月)",
+      "url": "https://www.ipa.go.jp/security/security-alert/2026/0909-ms.html",
+      "description": "",
+      "publishedAt": "2026-09-08T15:00:00Z",
+      "cves": []
+    },
+    {
+      "id": "b8da25426d1fbeab4352",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Citrix NetScaler — CVE-2026-19490",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-19490",
+      "description": "Citrix NetScaler ADC and NetScaler Gateway contain an authentication-bypass vulnerability involving an alternate path or channel. When the NetScaler appliance is configured as an AAA virtual server or as a Gateway (SSL VPN, ICA Proxy, CVPN…",
+      "publishedAt": "2026-09-08T15:00:00Z",
+      "cves": [
+        "CVE-2026-19490"
+      ]
+    },
+    {
+      "id": "64b62dd8867e151c0380",
+      "source": "ipa",
+      "category": "alert",
+      "priority": "normal",
+      "title": "Adobe Acrobat および Reader の脆弱性対策について(2026年9月)",
+      "url": "https://www.ipa.go.jp/security/security-alert/2026/0909-adobereader.html",
+      "description": "",
+      "publishedAt": "2026-09-08T15:00:00Z",
+      "cves": []
+    },
+    {
+      "id": "4ba37a93fc6613ddf35a",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Google Chromium V8 — CVE-2026-87491",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-87491",
+      "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromiu…",
+      "publishedAt": "2026-09-08T15:00:00Z",
+      "cves": [
+        "CVE-2026-87491"
+      ]
+    },
+    {
+      "id": "ad5cef37b1996b022cb8",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "N-able N-central — CVE-2026-86218",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-86218",
+      "description": "N-able N-central contains a static code injection vulnerability that could allow for pre-authentication remote code execution.",
+      "publishedAt": "2026-09-07T15:00:00Z",
+      "cves": [
+        "CVE-2026-86218"
+      ]
+    },
+    {
+      "id": "9f1ed155ef3dc9d5eaa4",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Adobe Commerce and Magento — CVE-2026-75650",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-75650",
+      "description": "Adobe Commerce and Magento Open Source contain an improper neutralization of special elements used in a template engine vulnerability that could allow an attacker to execute arbitrary code.",
+      "publishedAt": "2026-09-07T15:00:00Z",
+      "cves": [
+        "CVE-2026-75650"
+      ]
+    },
+    {
+      "id": "41976ccb900de2d98ebe",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Microsoft Windows — CVE-2026-81963",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-81963",
+      "description": "Microsoft Windows Update Stack contains a link following vulnerability that allows a local attacker to escalate privileges locally up to SYSTEM.",
+      "publishedAt": "2026-09-07T15:00:00Z",
+      "cves": [
+        "CVE-2026-81963"
+      ]
+    },
+    {
+      "id": "147986166d87c68063a4",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Microsoft Windows — CVE-2026-85880",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-85880",
+      "description": "Microsoft Windows Advanced Local Procedure Call contains a heap-based buffer overflow vulnerability that allows an attacker to elevate privileges locally.",
+      "publishedAt": "2026-09-07T15:00:00Z",
+      "cves": [
+        "CVE-2026-85880"
+      ]
+    },
+    {
+      "id": "194f2779a3b33e8c3b99",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Google Chromium V8 — CVE-2026-85046",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-85046",
+      "description": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, inc…",
+      "publishedAt": "2026-09-03T15:00:00Z",
+      "cves": [
+        "CVE-2026-85046"
+      ]
+    },
+    {
+      "id": "df5bee05c2445c2fcea8",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "BerriAI LiteLLM — CVE-2026-59822",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-59822",
+      "description": "BerriAI LiteLLM contains an improper authentication vulnerability in the MCP Streamable HTTP endpoint that could allow an unauthenticated attacker to establish an authenticated MCP session using an arbitrary Bearer token.",
+      "publishedAt": "2026-09-01T15:00:00Z",
+      "cves": [
+        "CVE-2026-59822"
+      ]
+    },
+    {
+      "id": "d148a29b731ff296f6b1",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Kludex Starlette — CVE-2026-48710",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-48710",
+      "description": "Kludex Starlette contains a HTTP request/response smuggling vulnerability that could allow attackers to inject paths into the host part, prepending the actual path leading to issues such as authentication bypass when the authentication dep…",
+      "publishedAt": "2026-09-01T15:00:00Z",
+      "cves": [
+        "CVE-2026-48710"
+      ]
+    },
+    {
+      "id": "9c39fbef60e83adcb0bf",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "SonicWall SMA1000 Appliances — CVE-2026-83548",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-83548",
+      "description": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform unauthorized operations.",
+      "publishedAt": "2026-09-01T15:00:00Z",
+      "cves": [
+        "CVE-2026-83548"
+      ]
+    },
+    {
+      "id": "923ffd10d5f508ac2916",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "JFrog Artifactory — CVE-2026-82329",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-82329",
+      "description": "JFrog Artifactory contains an improper authentication vulnerability that under default configuration can allow an unauthenticated attacker with network access to obtain administrative privileges.",
+      "publishedAt": "2026-09-01T15:00:00Z",
+      "cves": [
+        "CVE-2026-82329"
+      ]
+    },
+    {
+      "id": "665e3a6cb103bc389698",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "SonicWall SMA1000 Appliances — CVE-2026-83549",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-83549",
+      "description": "SonicWall SMA1000 Appliances contains an OS command injection vulnerability that could enable a remote authenticated attacker as administrator to execute arbitrary OS commands, resulting in remote code execution.",
+      "publishedAt": "2026-09-01T15:00:00Z",
+      "cves": [
+        "CVE-2026-83549"
+      ]
+    },
+    {
+      "id": "4dba579f541074cb586c",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Sangoma Switchvox — CVE-2026-9586",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-9586",
+      "description": "Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single crafted request, including database operati…",
+      "publishedAt": "2026-09-01T15:00:00Z",
+      "cves": [
+        "CVE-2026-9586"
+      ]
+    },
+    {
+      "id": "28aa58cabe40babb92a6",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Kestra Kestra OSS — CVE-2026-49869",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-49869",
+      "description": "Kestra OSS contains an OS command injection vulnerability that could allow an unauthenticated remote attacker to create and execute arbitrary workflows without credentials.",
+      "publishedAt": "2026-09-01T15:00:00Z",
+      "cves": [
+        "CVE-2026-49869"
+      ]
+    },
+    {
+      "id": "2fa86a541a4af19edc22",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "PaperCut NG/MF — CVE-2026-81578",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-81578",
+      "description": "PaperCut NG/MF contains a missing authentication for critical function vulnerability which allows an unauthenticated remote attacker to modify certain system configurations. This vulnerability can be chained with CVE-2026-82078.",
+      "publishedAt": "2026-08-30T15:00:00Z",
+      "cves": [
+        "CVE-2026-81578"
+      ]
+    },
+    {
+      "id": "101a84e891d6ae063c36",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "PaperCut NG/MF — CVE-2026-82078",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-82078",
+      "description": "PaperCut NG/MF contains an unsafe reflection vulnerability that allows an attacker to manipulate system configuration parameters and execute arbitrary Java bytecode residing on the application classpath under the security context of the Pa…",
+      "publishedAt": "2026-08-30T15:00:00Z",
+      "cves": [
+        "CVE-2026-82078"
+      ]
+    },
+    {
+      "id": "6c554ac88837e6dd12d8",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "ownCloud ownCloud — CVE-2023-49105",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2023-49105",
+      "description": "ownCloud contains an improper authentication vulnerability that allows an attacker to access, modify, or delete any file without authentication if the username of a victim is known, and the victim has no signing-key configured.",
+      "publishedAt": "2026-08-26T15:00:00Z",
+      "cves": [
+        "CVE-2023-49105"
+      ]
+    },
+    {
+      "id": "1bc549292d79e4a15e71",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "JFrog Artifactory — CVE-2026-66384",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-66384",
+      "description": "JFrog Artifactory contains an improper limitation of a pathname to a restricted directory vulnerability. This can allow an authenticated user to write data outside the intended Docker cache path under specific remote-repository conditions.",
+      "publishedAt": "2026-08-26T15:00:00Z",
+      "cves": [
+        "CVE-2026-66384"
+      ]
+    },
+    {
+      "id": "147c1075e4e7815b5bd9",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Linux Kernel — CVE-2026-53362",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-53362",
+      "description": "Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to Suse, Red Hat, and other products using…",
+      "publishedAt": "2026-08-26T15:00:00Z",
+      "cves": [
+        "CVE-2026-53362"
+      ]
+    },
+    {
+      "id": "ced03f3e495c94e1381a",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Red Hat Libuser — CVE-2015-3246",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2015-3246",
+      "description": "Red Hat libuser contains a race condition vulnerability that allows authenticated local users to corrupt the /etc/passwd file to cause a denial of service or privilege escalation.",
+      "publishedAt": "2026-08-25T15:00:00Z",
+      "cves": [
+        "CVE-2015-3246"
+      ]
+    },
+    {
+      "id": "ae1bed2b7fec65d01447",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Red Hat Automatic Bug Reporting Tool — CVE-2015-5287",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2015-5287",
+      "description": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a predictable name. The impacted product…",
+      "publishedAt": "2026-08-25T15:00:00Z",
+      "cves": [
+        "CVE-2015-5287"
+      ]
+    },
+    {
+      "id": "67f3b7eae970db10d428",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Linux Kernel — CVE-2022-0995",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2022-0995",
+      "description": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.",
+      "publishedAt": "2026-08-25T15:00:00Z",
+      "cves": [
+        "CVE-2022-0995"
+      ]
+    },
+    {
+      "id": "3cc1c58bdd12a40ee0a7",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Citrix NetScaler ADC and NetScaler Gateway — CVE-2026-8452",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-8452",
+      "description": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability which could lead to denial of service.",
+      "publishedAt": "2026-08-25T15:00:00Z",
+      "cves": [
+        "CVE-2026-8452"
+      ]
+    },
+    {
+      "id": "363c0cdfe4a5658fff5d",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Microsoft SQL Server — CVE-2019-1068",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2019-1068",
+      "description": "Microsoft SQL Server contains a remote code execution vulnerability that could allow an attacker to execute code in the context of the SQL Server Database Engine service account.",
+      "publishedAt": "2026-08-25T15:00:00Z",
+      "cves": [
+        "CVE-2019-1068"
+      ]
+    },
+    {
+      "id": "241d192da386c6d2a168",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Ajax.NET Professional Ajax.NET Professional — CVE-2021-23758",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2021-23758",
+      "description": "Ajax.NET Professional (AjaxPro) contains a deserialization of untrusted data vulnerability that could allow for remote code execution via arbitrary .NET classes. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS…",
+      "publishedAt": "2026-08-25T15:00:00Z",
+      "cves": [
+        "CVE-2021-23758"
+      ]
+    },
+    {
+      "id": "c9f602ed0d66895373d1",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Gitea Gitea — CVE-2026-60004",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-60004",
+      "description": "Gitea contains a code injection vulnerability that allows an attacker with repository write access to send a malicious patch to the diffpatch API endpoint to plant an executable Git hook and run shell commands as the Gitea service account.",
+      "publishedAt": "2026-08-24T15:00:00Z",
+      "cves": [
+        "CVE-2026-60004"
+      ]
+    },
+    {
+      "id": "d3bde59984914fee42d7",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in — CVE-2026-21962",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-21962",
+      "description": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in contain an improper access control vulnerability that can result in unauthorized creation, deletion or modification access to critical data as well as unauthorized access to criti…",
+      "publishedAt": "2026-08-23T15:00:00Z",
+      "cves": [
+        "CVE-2026-21962"
+      ]
+    },
+    {
+      "id": "1332f02f8aa8521ccee8",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Synacor Zimbra Collaboration Suite (ZCS) — CVE-2026-73570",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-73570",
+      "description": "Zimbra Collaboration Suite (ZCS) contains an OS command injection vulnerability which could allow an unauthenticated attacker to send specially crafted SMTP requests that may result in execution of arbitrary operating system commands as th…",
+      "publishedAt": "2026-08-20T15:00:00Z",
+      "cves": [
+        "CVE-2026-73570"
+      ]
+    }
+  ]
+}

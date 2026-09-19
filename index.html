@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10243a">
+  <meta name="description" content="国内の注意喚起と悪用確認済みの脆弱性を追う、個人用セキュリティニュースフィード。">
+  <title>Security Feed | セキュリティ情報を、見逃さない。</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="header-inner shell">
+      <a class="brand" href="./" aria-label="Security Feed トップ">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-wordmark">SECURITY<span>FEED</span><small>PERSONAL INTELLIGENCE DESK</small></span>
+      </a>
+      <nav class="header-nav" aria-label="主なページ内リンク">
+        <a href="#priority">重要な更新</a>
+        <a href="#feed">最新フィード</a>
+        <a href="#sources">情報源</a>
+      </nav>
+      <div class="header-live"><span class="live-dot"></span><span id="header-date">読み込み中</span></div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> SECURITY MONITOR / JAPAN + GLOBAL</p>
+          <h1>必要な脅威情報を、<br><em>ひとつの画面に。</em></h1>
+          <p class="hero-lead">公的機関の注意喚起、脆弱性情報、実際に悪用された CVE を時系列で確認できます。気になる記事は保存して、あとから読み返せます。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#feed">最新情報を見る <span aria-hidden="true">↗</span></a>
+            <span class="hero-update" id="hero-update">データを読み込み中…</span>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="フィードの概要">
+          <div class="panel-topline"><span>FEED STATUS</span><span class="panel-signal"><i></i> LIVE SOURCES</span></div>
+          <div class="panel-main-stat"><span id="count-week">—</span><small>過去7日の情報</small></div>
+          <div class="panel-divider"></div>
+          <div class="panel-stats">
+            <div><strong id="count-today">—</strong><span>直近24時間</span></div>
+            <div><strong id="count-priority">—</strong><span>要確認</span></div>
+            <div><strong id="count-sources">—</strong><span>情報源</span></div>
+          </div>
+          <div class="panel-decoration" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="shell content-shell">
+      <section id="priority" class="priority-section" aria-labelledby="priority-heading">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker"><span class="kicker-dot"></span> FOCUS</p>
+            <h2 id="priority-heading">今、確認したい情報</h2>
+            <p>緊急の注意喚起と、直近の悪用確認済み脆弱性を優先表示します。</p>
+          </div>
+          <a href="#feed" class="section-link">すべて見る <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="priority-grid" id="priority-grid" aria-live="polite">
+          <div class="placeholder-card">重要な更新を確認中…</div>
+        </div>
+      </section>
+
+      <div class="main-grid">
+        <section id="feed" class="feed-section" aria-labelledby="feed-heading">
+          <div class="section-heading feed-heading">
+            <div>
+              <p class="section-kicker"><span class="kicker-dot teal"></span> LATEST UPDATES</p>
+              <h2 id="feed-heading">最新フィード</h2>
+            </div>
+            <span class="result-count" id="result-count">読み込み中…</span>
+          </div>
+
+          <div class="filters" aria-label="記事の絞り込み">
+            <div class="filter-row">
+              <label class="search-field">
+                <span class="sr-only">キーワードで検索</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.2"></circle><path d="m15.5 15.5 5 5"></path></svg>
+                <input id="search-input" type="search" placeholder="キーワード・CVE を検索" autocomplete="off">
+              </label>
+              <label class="select-wrap"><span class="sr-only">期間</span><select id="period-select"><option value="7">過去7日</option><option value="1">過去24時間</option><option value="30">過去30日</option></select></label>
+              <label class="select-wrap"><span class="sr-only">情報源</span><select id="source-select"><option value="all">すべての情報源</option></select></label>
+            </div>
+            <div class="filter-bottom">
+              <div class="category-tabs" id="category-tabs" role="group" aria-label="カテゴリ">
+                <button type="button" class="active" data-category="all" aria-pressed="true">すべて</button>
+                <button type="button" data-category="important" aria-pressed="false">要確認</button>
+                <button type="button" data-category="alert" aria-pressed="false">注意喚起</button>
+                <button type="button" data-category="vulnerability" aria-pressed="false">脆弱性</button>
+                <button type="button" data-category="exploited" aria-pressed="false">悪用確認</button>
+                <button type="button" data-category="analysis" aria-pressed="false">分析・レポート</button>
+              </div>
+              <div class="personal-filters">
+                <button id="unread-button" type="button" aria-pressed="false">未読のみ</button>
+                <button id="saved-button" type="button" aria-pressed="false">☆ 保存済み</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="feed-list" class="feed-list" aria-live="polite">
+            <div class="loading-state">フィードを読み込んでいます…</div>
+          </div>
+          <button id="load-more" class="load-more" type="button" hidden>さらに表示 <span aria-hidden="true">↓</span></button>
+        </section>
+
+        <aside class="sidebar" aria-label="フィード情報">
+          <section class="aside-card glance-card">
+            <p class="aside-kicker">HOW TO READ</p>
+            <h3>情報の見かた</h3>
+            <div class="legend-row"><span class="badge badge-urgent">緊急</span><span>IPA が緊急とした注意喚起</span></div>
+            <div class="legend-row"><span class="badge badge-exploited">悪用確認</span><span>CISA KEV に掲載された CVE</span></div>
+            <p class="aside-note">記事を開くと既読になります。☆で保存した記事と既読情報は、このブラウザに保存されます。</p>
+          </section>
+          <section id="sources" class="aside-card sources-card">
+            <p class="aside-kicker">DATA SOURCES</p>
+            <h3>情報源</h3>
+            <div id="source-list" class="source-list"><p>読み込み中…</p></div>
+            <p class="aside-note">本文は転載せず、見出しと短い説明から一次情報に移動できます。</p>
+          </section>
+          <section class="aside-card status-card">
+            <p class="aside-kicker">UPDATE STATUS</p>
+            <h3>更新状況</h3>
+            <p id="update-status">データを読み込み中です。</p>
+          </section>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-inner"><span>SECURITY FEED <small>© 2026</small></span><p>公開情報を整理した個人用フィードです。判断と対策はリンク先の一次情報を確認してください。</p><a href="#main">ページ上部へ ↑</a></div></footer>
+</body>
+</html>
