@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-19T13:37:28Z",
+  "checkedAt": "2026-09-19T13:47:34Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,35 +8,35 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-19T13:37:28Z"
+      "fetchedAt": "2026-09-19T13:47:34Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-19T13:37:28Z"
+      "fetchedAt": "2026-09-19T13:47:34Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-19T13:37:28Z"
+      "fetchedAt": "2026-09-19T13:47:34Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-19T13:37:28Z"
+      "fetchedAt": "2026-09-19T13:47:34Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-19T13:37:28Z"
+      "fetchedAt": "2026-09-19T13:47:34Z"
     }
   ],
   "items": [
