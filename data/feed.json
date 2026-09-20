@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-20T16:07:04Z",
+  "checkedAt": "2026-09-20T20:49:28Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,59 +8,70 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-20T16:07:04Z"
+      "fetchedAt": "2026-09-20T20:49:28Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-20T16:07:04Z"
+      "fetchedAt": "2026-09-20T20:49:28Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-20T16:07:04Z"
+      "fetchedAt": "2026-09-20T20:49:28Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-20T16:07:04Z"
+      "fetchedAt": "2026-09-20T20:49:28Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-20T16:07:04Z"
+      "fetchedAt": "2026-09-20T20:49:28Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-20T16:07:04Z"
+      "fetchedAt": "2026-09-20T20:49:28Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-20T16:07:04Z"
+      "fetchedAt": "2026-09-20T20:49:28Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-20T16:07:04Z"
+      "fetchedAt": "2026-09-20T20:49:28Z"
     }
   ],
   "items": [
+    {
+      "id": "b33188d8c4e17f2a382d",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "AI Agents Keep Falling to 'Goal Hijack' (Copilot, Cursor, Grok)",
+      "url": "https://www.reddit.com/r/netsec/comments/1wlnmg6/ai_agents_keep_falling_to_goal_hijack_copilot/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-20T17:46:09Z",
+      "cves": []
+    },
     {
       "id": "d7e4f5d3f310f41d94d4",
       "source": "reddit-netsec",
