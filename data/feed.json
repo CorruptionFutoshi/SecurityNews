@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-19T20:40:48Z",
+  "checkedAt": "2026-09-20T04:54:09Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,56 +8,56 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-19T20:40:48Z"
+      "fetchedAt": "2026-09-20T04:54:09Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-19T20:40:48Z"
+      "fetchedAt": "2026-09-20T04:54:09Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-19T20:40:48Z"
+      "fetchedAt": "2026-09-20T04:54:09Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-19T20:40:48Z"
+      "fetchedAt": "2026-09-20T04:54:09Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-19T20:40:48Z"
+      "fetchedAt": "2026-09-20T04:54:09Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-19T20:40:48Z"
+      "fetchedAt": "2026-09-20T04:54:09Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-19T20:40:48Z"
+      "fetchedAt": "2026-09-20T04:54:09Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-19T20:40:48Z"
+      "fetchedAt": "2026-09-20T04:54:09Z"
     }
   ],
   "items": [
