@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-20T20:49:28Z",
+  "checkedAt": "2026-09-21T04:56:24Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,59 +8,70 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-20T20:49:28Z"
+      "fetchedAt": "2026-09-21T04:56:24Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-20T20:49:28Z"
+      "fetchedAt": "2026-09-21T04:56:24Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-20T20:49:28Z"
+      "fetchedAt": "2026-09-21T04:56:24Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-20T20:49:28Z"
+      "fetchedAt": "2026-09-21T04:56:24Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-20T20:49:28Z"
+      "fetchedAt": "2026-09-21T04:56:24Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-20T20:49:28Z"
+      "fetchedAt": "2026-09-21T04:56:24Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-20T20:49:28Z"
+      "fetchedAt": "2026-09-21T04:56:24Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-20T20:49:28Z"
+      "fetchedAt": "2026-09-21T04:56:24Z"
     }
   ],
   "items": [
+    {
+      "id": "481ca25e5dca996c4e4c",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Silent packet loss in PcapSplitter: a file collision bug on TCP session reuse",
+      "url": "https://www.reddit.com/r/netsec/comments/1wlzrut/silent_packet_loss_in_pcapsplitter_a_file/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-21T02:05:00Z",
+      "cves": []
+    },
     {
       "id": "b33188d8c4e17f2a382d",
       "source": "reddit-netsec",
