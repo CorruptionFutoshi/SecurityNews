@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-21T12:48:53Z",
+  "checkedAt": "2026-09-21T21:58:55Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,59 +8,83 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-21T12:48:53Z"
+      "fetchedAt": "2026-09-21T21:58:55Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-21T12:48:53Z"
+      "fetchedAt": "2026-09-21T21:58:55Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-21T12:48:53Z"
+      "fetchedAt": "2026-09-21T21:58:55Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-21T12:48:53Z"
+      "fetchedAt": "2026-09-21T21:58:55Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-21T12:48:53Z"
+      "fetchedAt": "2026-09-21T21:58:55Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-21T12:48:53Z"
+      "fetchedAt": "2026-09-21T21:58:55Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-21T12:48:53Z"
+      "fetchedAt": "2026-09-21T21:58:55Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-21T12:48:53Z"
+      "fetchedAt": "2026-09-21T21:58:55Z"
     }
   ],
   "items": [
+    {
+      "id": "7e7f65f3e73fa18a157e",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Implant Encryption via the Dump Encoding Library",
+      "url": "https://www.reddit.com/r/netsec/comments/1wmkcg0/implant_encryption_via_the_dump_encoding_library/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-21T18:02:34Z",
+      "cves": []
+    },
+    {
+      "id": "6c74448833d6b4f6210f",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "ZTE SmartHome Account Takeover: Password Reset Without Verification Code. 4 CVEs, 100K+ Android Downloads - CVE-2026-86553",
+      "url": "https://www.reddit.com/r/netsec/comments/1wmhror/zte_smarthome_account_takeover_password_reset/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-21T16:30:48Z",
+      "cves": [
+        "CVE-2026-86553"
+      ]
+    },
     {
       "id": "df0a9cd7ad326ab851ff",
       "source": "reddit-netsec",
@@ -104,6 +128,19 @@
       "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
       "publishedAt": "2026-09-20T15:32:34Z",
       "cves": []
+    },
+    {
+      "id": "f094c93be0f35469719c",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Zyxel GS1900 Series Switches — CVE-2026-7273",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-7273",
+      "description": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
+      "publishedAt": "2026-09-20T15:00:00Z",
+      "cves": [
+        "CVE-2026-7273"
+      ]
     },
     {
       "id": "d7e4f5d3f310f41d94d4",
