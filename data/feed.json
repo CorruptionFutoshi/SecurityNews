@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-21T04:56:24Z",
+  "checkedAt": "2026-09-21T12:48:53Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,59 +8,70 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-21T04:56:24Z"
+      "fetchedAt": "2026-09-21T12:48:53Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-21T04:56:24Z"
+      "fetchedAt": "2026-09-21T12:48:53Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-21T04:56:24Z"
+      "fetchedAt": "2026-09-21T12:48:53Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-21T04:56:24Z"
+      "fetchedAt": "2026-09-21T12:48:53Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-21T04:56:24Z"
+      "fetchedAt": "2026-09-21T12:48:53Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-21T04:56:24Z"
+      "fetchedAt": "2026-09-21T12:48:53Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-21T04:56:24Z"
+      "fetchedAt": "2026-09-21T12:48:53Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-21T04:56:24Z"
+      "fetchedAt": "2026-09-21T12:48:53Z"
     }
   ],
   "items": [
+    {
+      "id": "df0a9cd7ad326ab851ff",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Three memory-safety bugs in Godot's untrusted-file parsers",
+      "url": "https://www.reddit.com/r/netsec/comments/1wm7krn/three_memorysafety_bugs_in_godots_untrustedfile/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-21T09:08:49Z",
+      "cves": []
+    },
     {
       "id": "481ca25e5dca996c4e4c",
       "source": "reddit-netsec",
@@ -81,6 +92,17 @@
       "url": "https://www.reddit.com/r/netsec/comments/1wlnmg6/ai_agents_keep_falling_to_goal_hijack_copilot/",
       "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
       "publishedAt": "2026-09-20T17:46:09Z",
+      "cves": []
+    },
+    {
+      "id": "4c18614dade78bc2e579",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "ChatGPT now knows what you do on other websites via ad collector",
+      "url": "https://www.reddit.com/r/netsec/comments/1wlk4wc/chatgpt_now_knows_what_you_do_on_other_websites/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-20T15:32:34Z",
       "cves": []
     },
     {
