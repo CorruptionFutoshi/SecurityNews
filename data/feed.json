@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-22T11:39:03Z",
+  "checkedAt": "2026-09-22T16:57:40Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,59 +8,83 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-22T11:39:03Z"
+      "fetchedAt": "2026-09-22T16:57:40Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-22T11:39:03Z"
+      "fetchedAt": "2026-09-22T16:57:40Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-22T11:39:03Z"
+      "fetchedAt": "2026-09-22T16:57:40Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-22T11:39:03Z"
+      "fetchedAt": "2026-09-22T16:57:40Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-22T11:39:03Z"
+      "fetchedAt": "2026-09-22T16:57:40Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-22T11:39:03Z"
+      "fetchedAt": "2026-09-22T16:57:40Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-22T11:39:03Z"
+      "fetchedAt": "2026-09-22T16:57:40Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-22T11:39:03Z"
+      "fetchedAt": "2026-09-22T16:57:40Z"
     }
   ],
   "items": [
+    {
+      "id": "23ea45f6722d5128496c",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "The finding said RCE. The second tester asked one question and the ticket died.",
+      "url": "https://www.reddit.com/r/netsec/comments/1wn84lz/the_finding_said_rce_the_second_tester_asked_one/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-22T12:28:26Z",
+      "cves": []
+    },
+    {
+      "id": "d9e969d75b5905c6e331",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "CVE-2026-45756: attacker-controlled regex in Symfony JsonPath filters (ReDoS)",
+      "url": "https://www.reddit.com/r/netsec/comments/1wn6m39/cve202645756_attackercontrolled_regex_in_symfony/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-22T11:15:05Z",
+      "cves": [
+        "CVE-2026-45756"
+      ]
+    },
     {
       "id": "438cba452b8de1345422",
       "source": "reddit-netsec",
@@ -1547,19 +1571,6 @@
       "publishedAt": "2026-08-24T15:00:00Z",
       "cves": [
         "CVE-2026-60004"
-      ]
-    },
-    {
-      "id": "d3bde59984914fee42d7",
-      "source": "cisa-kev",
-      "category": "exploited",
-      "priority": "exploited",
-      "title": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in — CVE-2026-21962",
-      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-21962",
-      "description": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in contain an improper access control vulnerability that can result in unauthorized creation, deletion or modification access to critical data as well as unauthorized access to criti…",
-      "publishedAt": "2026-08-23T15:00:00Z",
-      "cves": [
-        "CVE-2026-21962"
       ]
     }
   ]
