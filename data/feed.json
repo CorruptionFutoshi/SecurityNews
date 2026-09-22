@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-21T21:58:55Z",
+  "checkedAt": "2026-09-22T04:57:03Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,59 +8,81 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-21T21:58:55Z"
+      "fetchedAt": "2026-09-22T04:57:03Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-21T21:58:55Z"
+      "fetchedAt": "2026-09-22T04:57:03Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-21T21:58:55Z"
+      "fetchedAt": "2026-09-22T04:57:03Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-21T21:58:55Z"
+      "fetchedAt": "2026-09-22T04:57:03Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-21T21:58:55Z"
+      "fetchedAt": "2026-09-22T04:57:03Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-21T21:58:55Z"
+      "fetchedAt": "2026-09-22T04:57:03Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-21T21:58:55Z"
+      "fetchedAt": "2026-09-22T04:57:03Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-21T21:58:55Z"
+      "fetchedAt": "2026-09-22T04:57:03Z"
     }
   ],
   "items": [
+    {
+      "id": "e52095561531a064a8b4",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Inside BambooToken’s Linux implant: shell and file control over MQTT",
+      "url": "https://www.reddit.com/r/netsec/comments/1wmyhox/inside_bambootokens_linux_implant_shell_and_file/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-22T03:36:22Z",
+      "cves": []
+    },
+    {
+      "id": "de2a3f662b832aea0a2d",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Windows Exploitation Techniques: Dangling COM Object Registrations",
+      "url": "https://www.reddit.com/r/netsec/comments/1wmy5go/windows_exploitation_techniques_dangling_com/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-22T03:19:41Z",
+      "cves": []
+    },
     {
       "id": "7e7f65f3e73fa18a157e",
       "source": "reddit-netsec",
