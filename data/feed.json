@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-22T04:57:03Z",
+  "checkedAt": "2026-09-22T11:39:03Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,59 +8,73 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-22T04:57:03Z"
+      "fetchedAt": "2026-09-22T11:39:03Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-22T04:57:03Z"
+      "fetchedAt": "2026-09-22T11:39:03Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-22T04:57:03Z"
+      "fetchedAt": "2026-09-22T11:39:03Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-22T04:57:03Z"
+      "fetchedAt": "2026-09-22T11:39:03Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-22T04:57:03Z"
+      "fetchedAt": "2026-09-22T11:39:03Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-22T04:57:03Z"
+      "fetchedAt": "2026-09-22T11:39:03Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-22T04:57:03Z"
+      "fetchedAt": "2026-09-22T11:39:03Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-22T04:57:03Z"
+      "fetchedAt": "2026-09-22T11:39:03Z"
     }
   ],
   "items": [
+    {
+      "id": "438cba452b8de1345422",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "vCenter pre-auth RCE: CVE-2026-59309/59310",
+      "url": "https://www.reddit.com/r/netsec/comments/1wn37be/vcenter_preauth_rce_cve20265930959310/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-22T07:58:09Z",
+      "cves": [
+        "CVE-2026-59309",
+        "CVE-2026-59310"
+      ]
+    },
     {
       "id": "e52095561531a064a8b4",
       "source": "reddit-netsec",
