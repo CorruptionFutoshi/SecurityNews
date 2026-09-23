@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-23T11:37:18Z",
+  "checkedAt": "2026-09-23T16:59:12Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,59 +8,81 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-23T11:37:18Z"
+      "fetchedAt": "2026-09-23T16:59:12Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-23T11:37:18Z"
+      "fetchedAt": "2026-09-23T16:59:12Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-23T11:37:18Z"
+      "fetchedAt": "2026-09-23T16:59:12Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-23T11:37:18Z"
+      "fetchedAt": "2026-09-23T16:59:12Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-23T11:37:18Z"
+      "fetchedAt": "2026-09-23T16:59:12Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-23T11:37:18Z"
+      "fetchedAt": "2026-09-23T16:59:12Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-23T11:37:18Z"
+      "fetchedAt": "2026-09-23T16:59:12Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-23T11:37:18Z"
+      "fetchedAt": "2026-09-23T16:59:12Z"
     }
   ],
   "items": [
+    {
+      "id": "8392a20e22fbe18fb05c",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Inside Corp MDM, the Android spyware targeting logistics companies",
+      "url": "https://www.reddit.com/r/netsec/comments/1wo6oo5/inside_corp_mdm_the_android_spyware_targeting/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-23T13:54:56Z",
+      "cves": []
+    },
+    {
+      "id": "6d434ee65329f3017c35",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Android 17 enables certificate transparency, and breaks custom CAs",
+      "url": "https://www.reddit.com/r/netsec/comments/1wo4kk4/android_17_enables_certificate_transparency_and/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-23T12:26:00Z",
+      "cves": []
+    },
     {
       "id": "72eff9ec640c1a0b5a94",
       "source": "reddit-netsec",
@@ -1654,19 +1676,6 @@
       "publishedAt": "2026-08-25T15:00:00Z",
       "cves": [
         "CVE-2021-23758"
-      ]
-    },
-    {
-      "id": "c9f602ed0d66895373d1",
-      "source": "cisa-kev",
-      "category": "exploited",
-      "priority": "exploited",
-      "title": "Gitea Gitea — CVE-2026-60004",
-      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-60004",
-      "description": "Gitea contains a code injection vulnerability that allows an attacker with repository write access to send a malicious patch to the diffpatch API endpoint to plant an executable Git hook and run shell commands as the Gitea service account.",
-      "publishedAt": "2026-08-24T15:00:00Z",
-      "cves": [
-        "CVE-2026-60004"
       ]
     }
   ]
