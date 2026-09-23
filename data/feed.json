@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-23T04:45:32Z",
+  "checkedAt": "2026-09-23T11:37:18Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,59 +8,70 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-23T04:45:32Z"
+      "fetchedAt": "2026-09-23T11:37:18Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-23T04:45:32Z"
+      "fetchedAt": "2026-09-23T11:37:18Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-23T04:45:32Z"
+      "fetchedAt": "2026-09-23T11:37:18Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-23T04:45:32Z"
+      "fetchedAt": "2026-09-23T11:37:18Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-23T04:45:32Z"
+      "fetchedAt": "2026-09-23T11:37:18Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-23T04:45:32Z"
+      "fetchedAt": "2026-09-23T11:37:18Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-23T04:45:32Z"
+      "fetchedAt": "2026-09-23T11:37:18Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-23T04:45:32Z"
+      "fetchedAt": "2026-09-23T11:37:18Z"
     }
   ],
   "items": [
+    {
+      "id": "72eff9ec640c1a0b5a94",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Leaked GitHub App private keys let researchers impersonate 440 apps including CDC and BuildBuddy",
+      "url": "https://www.reddit.com/r/netsec/comments/1wnwy4b/leaked_github_app_private_keys_let_researchers/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-23T05:20:37Z",
+      "cves": []
+    },
     {
       "id": "4badc7f3867d287462e8",
       "source": "reddit-netsec",
@@ -106,6 +117,17 @@
       "cves": [
         "CVE-2026-45756"
       ]
+    },
+    {
+      "id": "35e5c641f4ee1d25bb5c",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Free, hands-on 14-week university security course (open to anyone online)",
+      "url": "https://www.reddit.com/r/netsec/comments/1wn4zku/free_handson_14week_university_security_course/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-22T09:46:15Z",
+      "cves": []
     },
     {
       "id": "438cba452b8de1345422",
