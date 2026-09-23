@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-22T21:19:35Z",
+  "checkedAt": "2026-09-23T04:45:32Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,59 +8,81 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-22T21:19:35Z"
+      "fetchedAt": "2026-09-23T04:45:32Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-22T21:19:35Z"
+      "fetchedAt": "2026-09-23T04:45:32Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-22T21:19:35Z"
+      "fetchedAt": "2026-09-23T04:45:32Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-22T21:19:35Z"
+      "fetchedAt": "2026-09-23T04:45:32Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-22T21:19:35Z"
+      "fetchedAt": "2026-09-23T04:45:32Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-22T21:19:35Z"
+      "fetchedAt": "2026-09-23T04:45:32Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-22T21:19:35Z"
+      "fetchedAt": "2026-09-23T04:45:32Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-22T21:19:35Z"
+      "fetchedAt": "2026-09-23T04:45:32Z"
     }
   ],
   "items": [
+    {
+      "id": "4badc7f3867d287462e8",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "ATT&CKing TACACS+ to Pwn Your Network via a Pre-Auth RCE - elttam",
+      "url": "https://www.reddit.com/r/netsec/comments/1wnvaik/attcking_tacacs_to_pwn_your_network_via_a_preauth/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-23T03:53:01Z",
+      "cves": []
+    },
+    {
+      "id": "f57b3f9fb9b79088d239",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Frame: Grounding LLM Vulnerability Detection with a Sound Separation-Logic Core",
+      "url": "https://www.reddit.com/r/netsec/comments/1wnr20b/frame_grounding_llm_vulnerability_detection_with/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-23T00:35:20Z",
+      "cves": []
+    },
     {
       "id": "23ea45f6722d5128496c",
       "source": "reddit-netsec",
@@ -143,6 +165,58 @@
       "publishedAt": "2026-09-21T16:30:48Z",
       "cves": [
         "CVE-2026-86553"
+      ]
+    },
+    {
+      "id": "cf4ca1ecb4a9138cd437",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Check Point Multiple Products — CVE-2026-93616",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-93616",
+      "description": "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server, and SmartEvent contain a path traversal vulnerability that allows an unauthenticated attacker to upload and execute arbit…",
+      "publishedAt": "2026-09-21T15:00:00Z",
+      "cves": [
+        "CVE-2026-93616"
+      ]
+    },
+    {
+      "id": "c14552d8f9850d7169e9",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Arista VeloCloud Orchestrator — CVE-2026-93952",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-93952",
+      "description": "Arista VeloCloud Orchestrator (VCO) on-prem contains an improper input validation vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise th…",
+      "publishedAt": "2026-09-21T15:00:00Z",
+      "cves": [
+        "CVE-2026-93952"
+      ]
+    },
+    {
+      "id": "aeb72e49b2c3f378da93",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Check Point Multiple Products — CVE-2026-85102",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-85102",
+      "description": "Check Point Security Gateway and Check Point Spark Firewall using Site to Site VPN or Remote Access VPN contain an improper certificate validation vulnerability which could allow an unauthenticated remote attacker to execute arbitrary code…",
+      "publishedAt": "2026-09-21T15:00:00Z",
+      "cves": [
+        "CVE-2026-85102"
+      ]
+    },
+    {
+      "id": "895a9a70c2afc18af43d",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "F5 BIG-IP APM — CVE-2026-94127",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-94127",
+      "description": "F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker to perform remote code execution.",
+      "publishedAt": "2026-09-21T15:00:00Z",
+      "cves": [
+        "CVE-2026-94127"
       ]
     },
     {
