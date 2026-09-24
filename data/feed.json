@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-24T04:51:16Z",
+  "checkedAt": "2026-09-24T11:46:32Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,59 +8,83 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-24T04:51:16Z"
+      "fetchedAt": "2026-09-24T11:46:32Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-24T04:51:16Z"
+      "fetchedAt": "2026-09-24T11:46:32Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-24T04:51:16Z"
+      "fetchedAt": "2026-09-24T11:46:32Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-24T04:51:16Z"
+      "fetchedAt": "2026-09-24T11:46:32Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-24T04:51:16Z"
+      "fetchedAt": "2026-09-24T11:46:32Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-24T04:51:16Z"
+      "fetchedAt": "2026-09-24T11:46:32Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-24T04:51:16Z"
+      "fetchedAt": "2026-09-24T11:46:32Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-24T04:51:16Z"
+      "fetchedAt": "2026-09-24T11:46:32Z"
     }
   ],
   "items": [
+    {
+      "id": "3420787ca84e7a2e2517",
+      "source": "jpcert",
+      "category": "alert",
+      "priority": "normal",
+      "title": "注意喚起: F5 BIG-IP Access Policy Managerにおけるヒープベースのバッファオーバーフローの脆弱性（CVE-2026-94127）に関する注意喚起 (公開)",
+      "url": "https://www.jpcert.or.jp/at/2026/at260028.html",
+      "description": "",
+      "publishedAt": "2026-09-24T07:14:00Z",
+      "cves": [
+        "CVE-2026-94127"
+      ]
+    },
+    {
+      "id": "92cd3fc3bfaea42b620b",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Uncensored Qwen 3.8 27b helped write a LSASS Dumper which bypassed EDR while I made myself coffee",
+      "url": "https://www.reddit.com/r/netsec/comments/1wotpuj/uncensored_qwen_38_27b_helped_write_a_lsass/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-24T06:04:24Z",
+      "cves": []
+    },
     {
       "id": "9ec3f966898515d9bb10",
       "source": "jvn",
@@ -300,6 +324,17 @@
         "CVE-2026-59309",
         "CVE-2026-59310"
       ]
+    },
+    {
+      "id": "aadd6c667bc0bef5467a",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Leveraging undocumented CodeConnection APIs in a CodePipeline build job or SageMaker Studio Notebook to enumerate, clone, push and delete code repositories.",
+      "url": "https://www.reddit.com/r/netsec/comments/1wn2nxc/leveraging_undocumented_codeconnection_apis_in_a/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-22T07:24:57Z",
+      "cves": []
     },
     {
       "id": "e52095561531a064a8b4",
