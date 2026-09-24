@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-24T11:46:32Z",
+  "checkedAt": "2026-09-24T17:11:43Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,59 +8,92 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-24T11:46:32Z"
+      "fetchedAt": "2026-09-24T17:11:43Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-24T11:46:32Z"
+      "fetchedAt": "2026-09-24T17:11:43Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-24T11:46:32Z"
+      "fetchedAt": "2026-09-24T17:11:43Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-24T11:46:32Z"
+      "fetchedAt": "2026-09-24T17:11:43Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-24T11:46:32Z"
+      "fetchedAt": "2026-09-24T17:11:43Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-24T11:46:32Z"
+      "fetchedAt": "2026-09-24T17:11:43Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-24T11:46:32Z"
+      "fetchedAt": "2026-09-24T17:11:43Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-24T11:46:32Z"
+      "fetchedAt": "2026-09-24T17:11:43Z"
     }
   ],
   "items": [
+    {
+      "id": "b8df3fa01db003904c70",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "One Tap Too Far: Using Shortcuts to Bypass Chrome for iOS Call Prompts",
+      "url": "https://www.reddit.com/r/netsec/comments/1wp56y2/one_tap_too_far_using_shortcuts_to_bypass_chrome/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-24T15:45:32Z",
+      "cves": []
+    },
+    {
+      "id": "3a1a718a5ae0f789a368",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
+      "url": "https://www.reddit.com/r/netsec/comments/1wp466a/how_cloudflare_addressed_a_crosstenant_data/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-24T15:07:04Z",
+      "cves": []
+    },
+    {
+      "id": "7ec4125c1334eb28a939",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Getting root on OnePlus 15 from an untrusted app, via an audio debug service and a vendor HAL",
+      "url": "https://www.reddit.com/r/netsec/comments/1woylqf/getting_root_on_oneplus_15_from_an_untrusted_app/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-24T11:02:14Z",
+      "cves": []
+    },
     {
       "id": "3420787ca84e7a2e2517",
       "source": "jpcert",
@@ -1758,84 +1791,6 @@
       "publishedAt": "2026-08-26T15:00:00Z",
       "cves": [
         "CVE-2026-53362"
-      ]
-    },
-    {
-      "id": "ced03f3e495c94e1381a",
-      "source": "cisa-kev",
-      "category": "exploited",
-      "priority": "exploited",
-      "title": "Red Hat Libuser — CVE-2015-3246",
-      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2015-3246",
-      "description": "Red Hat libuser contains a race condition vulnerability that allows authenticated local users to corrupt the /etc/passwd file to cause a denial of service or privilege escalation.",
-      "publishedAt": "2026-08-25T15:00:00Z",
-      "cves": [
-        "CVE-2015-3246"
-      ]
-    },
-    {
-      "id": "ae1bed2b7fec65d01447",
-      "source": "cisa-kev",
-      "category": "exploited",
-      "priority": "exploited",
-      "title": "Red Hat Automatic Bug Reporting Tool — CVE-2015-5287",
-      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2015-5287",
-      "description": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a predictable name. The impacted product…",
-      "publishedAt": "2026-08-25T15:00:00Z",
-      "cves": [
-        "CVE-2015-5287"
-      ]
-    },
-    {
-      "id": "67f3b7eae970db10d428",
-      "source": "cisa-kev",
-      "category": "exploited",
-      "priority": "exploited",
-      "title": "Linux Kernel — CVE-2022-0995",
-      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2022-0995",
-      "description": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.",
-      "publishedAt": "2026-08-25T15:00:00Z",
-      "cves": [
-        "CVE-2022-0995"
-      ]
-    },
-    {
-      "id": "3cc1c58bdd12a40ee0a7",
-      "source": "cisa-kev",
-      "category": "exploited",
-      "priority": "exploited",
-      "title": "Citrix NetScaler ADC and NetScaler Gateway — CVE-2026-8452",
-      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-8452",
-      "description": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability which could lead to denial of service.",
-      "publishedAt": "2026-08-25T15:00:00Z",
-      "cves": [
-        "CVE-2026-8452"
-      ]
-    },
-    {
-      "id": "363c0cdfe4a5658fff5d",
-      "source": "cisa-kev",
-      "category": "exploited",
-      "priority": "exploited",
-      "title": "Microsoft SQL Server — CVE-2019-1068",
-      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2019-1068",
-      "description": "Microsoft SQL Server contains a remote code execution vulnerability that could allow an attacker to execute code in the context of the SQL Server Database Engine service account.",
-      "publishedAt": "2026-08-25T15:00:00Z",
-      "cves": [
-        "CVE-2019-1068"
-      ]
-    },
-    {
-      "id": "241d192da386c6d2a168",
-      "source": "cisa-kev",
-      "category": "exploited",
-      "priority": "exploited",
-      "title": "Ajax.NET Professional Ajax.NET Professional — CVE-2021-23758",
-      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2021-23758",
-      "description": "Ajax.NET Professional (AjaxPro) contains a deserialization of untrusted data vulnerability that could allow for remote code execution via arbitrary .NET classes. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS…",
-      "publishedAt": "2026-08-25T15:00:00Z",
-      "cves": [
-        "CVE-2021-23758"
       ]
     }
   ]
