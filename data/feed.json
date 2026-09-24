@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-24T17:11:43Z",
+  "checkedAt": "2026-09-24T21:31:27Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,59 +8,72 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-24T17:11:43Z"
+      "fetchedAt": "2026-09-24T21:31:27Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-24T17:11:43Z"
+      "fetchedAt": "2026-09-24T21:31:27Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-24T17:11:43Z"
+      "fetchedAt": "2026-09-24T21:31:27Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-24T17:11:43Z"
+      "fetchedAt": "2026-09-24T21:31:27Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-24T17:11:43Z"
+      "fetchedAt": "2026-09-24T21:31:27Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-24T17:11:43Z"
+      "fetchedAt": "2026-09-24T21:31:27Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-24T17:11:43Z"
+      "fetchedAt": "2026-09-24T21:31:27Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-24T17:11:43Z"
+      "fetchedAt": "2026-09-24T21:31:27Z"
     }
   ],
   "items": [
+    {
+      "id": "b296d7e055c83a1c9c3b",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "CVE-2026-91766: PHP had the redirect credential leak curl fixed in 2018",
+      "url": "https://www.reddit.com/r/netsec/comments/1wpcgf9/cve202691766_php_had_the_redirect_credential_leak/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-24T20:19:24Z",
+      "cves": [
+        "CVE-2026-91766"
+      ]
+    },
     {
       "id": "b8df3fa01db003904c70",
       "source": "reddit-netsec",
