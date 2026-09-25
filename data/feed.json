@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-25T11:51:39Z",
+  "checkedAt": "2026-09-25T17:11:49Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,59 +8,72 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-25T11:51:39Z"
+      "fetchedAt": "2026-09-25T17:11:49Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-25T11:51:39Z"
+      "fetchedAt": "2026-09-25T17:11:49Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-25T11:51:39Z"
+      "fetchedAt": "2026-09-25T17:11:49Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-25T11:51:39Z"
+      "fetchedAt": "2026-09-25T17:11:49Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-25T11:51:39Z"
+      "fetchedAt": "2026-09-25T17:11:49Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-25T11:51:39Z"
+      "fetchedAt": "2026-09-25T17:11:49Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-25T11:51:39Z"
+      "fetchedAt": "2026-09-25T17:11:49Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-25T11:51:39Z"
+      "fetchedAt": "2026-09-25T17:11:49Z"
     }
   ],
   "items": [
+    {
+      "id": "596cbcc6180755fa11be",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "CVE-2025-13032: Entering and Breaking the Avast Antivirus Sandbox Part 2",
+      "url": "https://www.reddit.com/r/netsec/comments/1wpyg75/cve202513032_entering_and_breaking_the_avast/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-25T14:54:02Z",
+      "cves": [
+        "CVE-2025-13032"
+      ]
+    },
     {
       "id": "59c617d6adf3e924c2c1",
       "source": "jvn",
@@ -152,6 +165,17 @@
       "cves": [
         "CVE-2026-91766"
       ]
+    },
+    {
+      "id": "5ec06622d3827f24da8d",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Fake Journalist phishing scam targeting tech founders",
+      "url": "https://www.reddit.com/r/netsec/comments/1wp5mdu/fake_journalist_phishing_scam_targeting_tech/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-24T16:01:36Z",
+      "cves": []
     },
     {
       "id": "b8df3fa01db003904c70",
@@ -1882,45 +1906,6 @@
       "description": "Authorities in Australia have arrested two men believed to be members of TeamPCP, a prolific cybercrime and data extortion group blamed for perpetrating the longest running spree of software supply chain attacks ever. In a statement releas…",
       "publishedAt": "2026-08-27T11:04:15Z",
       "cves": []
-    },
-    {
-      "id": "6c554ac88837e6dd12d8",
-      "source": "cisa-kev",
-      "category": "exploited",
-      "priority": "exploited",
-      "title": "ownCloud ownCloud — CVE-2023-49105",
-      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2023-49105",
-      "description": "ownCloud contains an improper authentication vulnerability that allows an attacker to access, modify, or delete any file without authentication if the username of a victim is known, and the victim has no signing-key configured.",
-      "publishedAt": "2026-08-26T15:00:00Z",
-      "cves": [
-        "CVE-2023-49105"
-      ]
-    },
-    {
-      "id": "1bc549292d79e4a15e71",
-      "source": "cisa-kev",
-      "category": "exploited",
-      "priority": "exploited",
-      "title": "JFrog Artifactory — CVE-2026-66384",
-      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-66384",
-      "description": "JFrog Artifactory contains an improper limitation of a pathname to a restricted directory vulnerability. This can allow an authenticated user to write data outside the intended Docker cache path under specific remote-repository conditions.",
-      "publishedAt": "2026-08-26T15:00:00Z",
-      "cves": [
-        "CVE-2026-66384"
-      ]
-    },
-    {
-      "id": "147c1075e4e7815b5bd9",
-      "source": "cisa-kev",
-      "category": "exploited",
-      "priority": "exploited",
-      "title": "Linux Kernel — CVE-2026-53362",
-      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-53362",
-      "description": "Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to Suse, Red Hat, and other products using…",
-      "publishedAt": "2026-08-26T15:00:00Z",
-      "cves": [
-        "CVE-2026-53362"
-      ]
     }
   ]
 }
