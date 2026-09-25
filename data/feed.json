@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-25T04:58:17Z",
+  "checkedAt": "2026-09-25T11:51:39Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,56 +8,56 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-25T04:58:17Z"
+      "fetchedAt": "2026-09-25T11:51:39Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-25T04:58:17Z"
+      "fetchedAt": "2026-09-25T11:51:39Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-25T04:58:17Z"
+      "fetchedAt": "2026-09-25T11:51:39Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-25T04:58:17Z"
+      "fetchedAt": "2026-09-25T11:51:39Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-25T04:58:17Z"
+      "fetchedAt": "2026-09-25T11:51:39Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-25T04:58:17Z"
+      "fetchedAt": "2026-09-25T11:51:39Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-25T04:58:17Z"
+      "fetchedAt": "2026-09-25T11:51:39Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-25T04:58:17Z"
+      "fetchedAt": "2026-09-25T11:51:39Z"
     }
   ],
   "items": [
@@ -82,6 +82,19 @@
       "description": "baserCMSユーザー会が提供するbaserCMSには複数の脆弱性が存在します。",
       "publishedAt": "2026-09-25T03:00:00Z",
       "cves": []
+    },
+    {
+      "id": "b558cd0806a011dace9c",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Argus Monitor Local Denial-of-Service Vulnerability (CVE-2026-79417)",
+      "url": "https://www.reddit.com/r/netsec/comments/1wpkc7q/argus_monitor_local_denialofservice_vulnerability/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-25T02:13:27Z",
+      "cves": [
+        "CVE-2026-79417"
+      ]
     },
     {
       "id": "5eabc030390a33993806",
@@ -160,6 +173,17 @@
       "url": "https://www.reddit.com/r/netsec/comments/1wp466a/how_cloudflare_addressed_a_crosstenant_data/",
       "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
       "publishedAt": "2026-09-24T15:07:04Z",
+      "cves": []
+    },
+    {
+      "id": "0e06c0d56ae8aa316bc2",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "How I Found a $113,337 AF_ALG Linux Local Privilege Escalation Before Copy Fail",
+      "url": "https://www.reddit.com/r/netsec/comments/1wp3kdy/how_i_found_a_113337_af_alg_linux_local_privilege/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-24T14:44:03Z",
       "cves": []
     },
     {
