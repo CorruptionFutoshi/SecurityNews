@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-25T17:11:49Z",
+  "checkedAt": "2026-09-25T21:35:18Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,56 +8,56 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-25T17:11:49Z"
+      "fetchedAt": "2026-09-25T21:35:18Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-25T17:11:49Z"
+      "fetchedAt": "2026-09-25T21:35:18Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-25T17:11:49Z"
+      "fetchedAt": "2026-09-25T21:35:18Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-25T17:11:49Z"
+      "fetchedAt": "2026-09-25T21:35:18Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-25T17:11:49Z"
+      "fetchedAt": "2026-09-25T21:35:18Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-25T17:11:49Z"
+      "fetchedAt": "2026-09-25T21:35:18Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-25T17:11:49Z"
+      "fetchedAt": "2026-09-25T21:35:18Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-25T17:11:49Z"
+      "fetchedAt": "2026-09-25T21:35:18Z"
     }
   ],
   "items": [
@@ -198,6 +198,32 @@
       "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
       "publishedAt": "2026-09-24T15:07:04Z",
       "cves": []
+    },
+    {
+      "id": "c9f3e2a5bda5b80e4c80",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Microsoft SharePoint — CVE-2026-65660",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-65660",
+      "description": "Microsoft SharePoint contains a code injection vulnerability which could allow an authorized attacker to execute code over a network.",
+      "publishedAt": "2026-09-24T15:00:00Z",
+      "cves": [
+        "CVE-2026-65660"
+      ]
+    },
+    {
+      "id": "52a46b7605d921b0792c",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "MikroTik RouterOS — CVE-2026-67279",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-67279",
+      "description": "Mikrotik RouterOS contains an improper enforcement of behavioral workflow vulnerability that could allow an unauthenticated client to open a session channel and send an exec request. This vulnerability can be chained to achieve unauthentic…",
+      "publishedAt": "2026-09-24T15:00:00Z",
+      "cves": [
+        "CVE-2026-67279"
+      ]
     },
     {
       "id": "0e06c0d56ae8aa316bc2",
@@ -358,6 +384,17 @@
       "cves": [
         "CVE-2026-80521"
       ]
+    },
+    {
+      "id": "fd16069476ba377a2811",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Compromising OBS Studio with a Twitch chat message.",
+      "url": "https://www.reddit.com/r/netsec/comments/1wohssy/compromising_obs_studio_with_a_twitch_chat_message/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-23T20:48:25Z",
+      "cves": []
     },
     {
       "id": "92a70be409e768f13057",
