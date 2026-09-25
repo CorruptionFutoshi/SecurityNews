@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-24T21:31:27Z",
+  "checkedAt": "2026-09-25T04:58:17Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,59 +8,125 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-24T21:31:27Z"
+      "fetchedAt": "2026-09-25T04:58:17Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-24T21:31:27Z"
+      "fetchedAt": "2026-09-25T04:58:17Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-24T21:31:27Z"
+      "fetchedAt": "2026-09-25T04:58:17Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-24T21:31:27Z"
+      "fetchedAt": "2026-09-25T04:58:17Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-24T21:31:27Z"
+      "fetchedAt": "2026-09-25T04:58:17Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-24T21:31:27Z"
+      "fetchedAt": "2026-09-25T04:58:17Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-24T21:31:27Z"
+      "fetchedAt": "2026-09-25T04:58:17Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-24T21:31:27Z"
+      "fetchedAt": "2026-09-25T04:58:17Z"
     }
   ],
   "items": [
+    {
+      "id": "59c617d6adf3e924c2c1",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "baserCMS用プラグイン「アドオンマイグレーター」 における信頼できない制御領域からの機能の組み込みに関する脆弱性",
+      "url": "https://jvn.jp/jp/JVN21754394/",
+      "description": "baserCMSユーザー会が提供するbaserCMS用プラグイン「アドオンマイグレーター」 には、信頼できない制御領域からの機能の組み込みに関する脆弱性が存在します。",
+      "publishedAt": "2026-09-25T03:00:15Z",
+      "cves": []
+    },
+    {
+      "id": "75b5b7e3453acf41ff75",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "baserCMSにおける複数の脆弱性",
+      "url": "https://jvn.jp/jp/JVN14353754/",
+      "description": "baserCMSユーザー会が提供するbaserCMSには複数の脆弱性が存在します。",
+      "publishedAt": "2026-09-25T03:00:00Z",
+      "cves": []
+    },
+    {
+      "id": "5eabc030390a33993806",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "ViewSonic vCastにおける複数の脆弱性",
+      "url": "https://jvn.jp/vu/JVNVU96941087/",
+      "description": "CERT/CCから本件に関するアドバイザリが公表されました。",
+      "publishedAt": "2026-09-25T01:00:30Z",
+      "cves": []
+    },
+    {
+      "id": "bc7ea042dcb56b1baebf",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "Norwegian Cruise Lineのドアアクセスコントローラにおける認証不備の脆弱性",
+      "url": "https://jvn.jp/vu/JVNVU96565230/",
+      "description": "CERT/CCから本件に関するアドバイザリが公表されました。",
+      "publishedAt": "2026-09-25T01:00:15Z",
+      "cves": []
+    },
+    {
+      "id": "ec7abe5632aa5643fb5c",
+      "source": "jvn",
+      "category": "vulnerability",
+      "priority": "normal",
+      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年09月24日）",
+      "url": "https://jvn.jp/vu/JVNVU93222287/",
+      "description": "米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。",
+      "publishedAt": "2026-09-25T01:00:00Z",
+      "cves": []
+    },
+    {
+      "id": "a1ed5900a76577d2f590",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "Lunex Unmasked: A New Information Stealer Deployed Through BYOVD",
+      "url": "https://www.reddit.com/r/netsec/comments/1wpddil/lunex_unmasked_a_new_information_stealer_deployed/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-24T20:56:07Z",
+      "cves": []
+    },
     {
       "id": "b296d7e055c83a1c9c3b",
       "source": "reddit-netsec",
@@ -266,6 +332,32 @@
       "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
       "publishedAt": "2026-09-23T19:56:02Z",
       "cves": []
+    },
+    {
+      "id": "4960c12fc03ae134156c",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "Adobe Commerce and Magento — CVE-2026-71362",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-71362",
+      "description": "Adobe Commerce and Magento contains an incorrect authorization vulnerability that could allow an attacker to leverage this vulnerability to gain elevated access to sensitive resources without any user interaction.",
+      "publishedAt": "2026-09-23T15:00:00Z",
+      "cves": [
+        "CVE-2026-71362"
+      ]
+    },
+    {
+      "id": "127400fca942eb80e5e6",
+      "source": "cisa-kev",
+      "category": "exploited",
+      "priority": "exploited",
+      "title": "WSO2 Multiple Products — CVE-2026-5430",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-5430",
+      "description": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution.",
+      "publishedAt": "2026-09-23T15:00:00Z",
+      "cves": [
+        "CVE-2026-5430"
+      ]
     },
     {
       "id": "8392a20e22fbe18fb05c",
