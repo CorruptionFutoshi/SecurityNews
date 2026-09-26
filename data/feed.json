@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-26T11:25:27Z",
+  "checkedAt": "2026-09-26T16:24:01Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,56 +8,56 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-26T11:25:27Z"
+      "fetchedAt": "2026-09-26T16:24:01Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-26T11:25:27Z"
+      "fetchedAt": "2026-09-26T16:24:01Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-26T11:25:27Z"
+      "fetchedAt": "2026-09-26T16:24:01Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-26T11:25:27Z"
+      "fetchedAt": "2026-09-26T16:24:01Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-26T11:25:27Z"
+      "fetchedAt": "2026-09-26T16:24:01Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-26T11:25:27Z"
+      "fetchedAt": "2026-09-26T16:24:01Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-26T11:25:27Z"
+      "fetchedAt": "2026-09-26T16:24:01Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-26T11:25:27Z"
+      "fetchedAt": "2026-09-26T16:24:01Z"
     }
   ],
   "items": [
@@ -1953,19 +1953,6 @@
       "publishedAt": "2026-08-30T15:00:00Z",
       "cves": [
         "CVE-2026-82078"
-      ]
-    },
-    {
-      "id": "f3551eec2324e2c52f7f",
-      "source": "exploit-db",
-      "category": "exploit",
-      "priority": "exploit-published",
-      "title": "CVE-2026-42167 - ProFTPD mod_sql post-authentication SQLi - RCE",
-      "url": "https://www.exploit-db.com/exploits/52658",
-      "description": "EDB-ID 52658 · 更新 · multiple / remote / CVE-2026-42167",
-      "publishedAt": "2026-08-27T15:00:00Z",
-      "cves": [
-        "CVE-2026-42167"
       ]
     }
   ]
