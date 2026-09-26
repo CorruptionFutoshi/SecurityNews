@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-26T04:58:47Z",
+  "checkedAt": "2026-09-26T11:25:27Z",
   "windowDays": 30,
   "sources": [
     {
@@ -8,59 +8,70 @@
       "name": "IPA",
       "home": "https://www.ipa.go.jp/security/security-alert/index.html",
       "ok": true,
-      "fetchedAt": "2026-09-26T04:58:47Z"
+      "fetchedAt": "2026-09-26T11:25:27Z"
     },
     {
       "id": "jpcert",
       "name": "JPCERT/CC",
       "home": "https://www.jpcert.or.jp/at/",
       "ok": true,
-      "fetchedAt": "2026-09-26T04:58:47Z"
+      "fetchedAt": "2026-09-26T11:25:27Z"
     },
     {
       "id": "jvn",
       "name": "JVN",
       "home": "https://jvn.jp/",
       "ok": true,
-      "fetchedAt": "2026-09-26T04:58:47Z"
+      "fetchedAt": "2026-09-26T11:25:27Z"
     },
     {
       "id": "jpcert-eyes",
       "name": "JPCERT/CC Eyes",
       "home": "https://blogs.jpcert.or.jp/ja/",
       "ok": true,
-      "fetchedAt": "2026-09-26T04:58:47Z"
+      "fetchedAt": "2026-09-26T11:25:27Z"
     },
     {
       "id": "cisa-kev",
       "name": "CISA KEV",
       "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "ok": true,
-      "fetchedAt": "2026-09-26T04:58:47Z"
+      "fetchedAt": "2026-09-26T11:25:27Z"
     },
     {
       "id": "krebs",
       "name": "Krebs on Security",
       "home": "https://krebsonsecurity.com/",
       "ok": true,
-      "fetchedAt": "2026-09-26T04:58:47Z"
+      "fetchedAt": "2026-09-26T11:25:27Z"
     },
     {
       "id": "reddit-netsec",
       "name": "Reddit r/netsec 週間上位",
       "home": "https://www.reddit.com/r/netsec/top/?t=week",
       "ok": true,
-      "fetchedAt": "2026-09-26T04:58:47Z"
+      "fetchedAt": "2026-09-26T11:25:27Z"
     },
     {
       "id": "exploit-db",
       "name": "Exploit Database",
       "home": "https://www.exploit-db.com/",
       "ok": true,
-      "fetchedAt": "2026-09-26T04:58:47Z"
+      "fetchedAt": "2026-09-26T11:25:27Z"
     }
   ],
   "items": [
+    {
+      "id": "15f2e19d3bf903b893a1",
+      "source": "reddit-netsec",
+      "category": "community",
+      "priority": "normal",
+      "title": "EX-ARRR: Sailing the Apple 0-click Seas",
+      "url": "https://www.reddit.com/r/netsec/comments/1wqmb3o/exarrr_sailing_the_apple_0click_seas/",
+      "description": "r/netsec の週間上位投稿。内容と評価は投稿先で確認してください。",
+      "publishedAt": "2026-09-26T09:35:39Z",
+      "cves": []
+    },
     {
       "id": "b755ea511b61fec59168",
       "source": "krebs",
@@ -1956,17 +1967,6 @@
       "cves": [
         "CVE-2026-42167"
       ]
-    },
-    {
-      "id": "885ddc9b0a9c5c1b51a7",
-      "source": "krebs",
-      "category": "blog",
-      "priority": "normal",
-      "title": "Two Alleged ‘TeamPCP’ Hackers Arrested in Australia",
-      "url": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/",
-      "description": "Authorities in Australia have arrested two men believed to be members of TeamPCP, a prolific cybercrime and data extortion group blamed for perpetrating the longest running spree of software supply chain attacks ever. In a statement releas…",
-      "publishedAt": "2026-08-27T11:04:15Z",
-      "cves": []
     }
   ]
 }
